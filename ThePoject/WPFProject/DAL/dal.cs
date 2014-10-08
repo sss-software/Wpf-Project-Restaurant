@@ -30,7 +30,10 @@ namespace DAL
 
         public Person GetPersonByEmail(string email)
         {
-            return null;
+            using (var db = new projectContext(conn.ConnectionString))
+            {
+                return db.Persons.FirstOrDefault(x => x.Email.Equals(email));
+            }
         }
 
         public void Insert(object obj)
@@ -51,37 +54,90 @@ namespace DAL
                     {
                         Close();
                     }
-
-
                 }
 
                 if (obj is Ration)
                 {
-
+                    try
+                    {
+                        Open();
+                        Ration r = (Ration)obj;
+                        db.Rations.Add(r);
+                        db.SaveChanges();
+                    }
+                    finally
+                    {
+                        Close();
+                    }
                 }
 
                 if (obj is Order)
                 {
+                    try
+                    {
+                        Open();
+                        Order o = (Order)obj;
+                        db.Orders.Add(o);
+                        db.SaveChanges();
+                    }
+                    finally
+                    {
+                        Close();
+                    }
+                }
 
+                if (obj is Table)
+                {
+                    try
+                    {
+                        Open();
+                        Table t = (Table)obj;
+                        db.Tables.Add(t);
+                        db.SaveChanges();
+                    }
+                    finally
+                    {
+                        Close();
+                    }
                 }
             }
         }
 
         public void Delete(object obj)
         {
-            if (obj is Person)
+            using (var db = new projectContext(conn.ConnectionString))
             {
+                if (obj is Person)
+                {
+                    Person p = (Person)obj;
+                    var person = db.Persons.FirstOrDefault(x => x.FirstName == p.FirstName);
+                    db.Persons.Remove(person);
+                    db.SaveChanges();
+                }
 
-            }
+                if (obj is Ration)
+                {
+                    Ration r = (Ration)obj;
+                    var ration = db.Rations.FirstOrDefault(x => x.RationId == r.RationId);
+                    db.Rations.Remove(ration);
+                    db.SaveChanges();
+                }
 
-            if (obj is Ration)
-            {
+                if (obj is Order)
+                {
+                    Order o = (Order)obj;
+                    var order = db.Orders.FirstOrDefault(x => x.OrderID == o.OrderID);
+                    db.Orders.Remove(order);
+                    db.SaveChanges();
+                }
 
-            }
-
-            if (obj is Order)
-            {
-
+                if (obj is Table)
+                {
+                    Table t = (Table)obj;
+                    var table = db.Tables.FirstOrDefault(x => x.IdTable == t.IdTable);
+                    db.Tables.Remove(table);
+                    db.SaveChanges();
+                }
             }
         }
 
@@ -101,16 +157,59 @@ namespace DAL
             {
 
             }
+
+            if (obj is Table)
+            {
+
+            }
         }
 
         public List<Person> GetAllPersons()
         {
             using (var db = new projectContext(conn.ConnectionString))
             {
-               var y =  db.Persons.ToList();
-               return y;
+               return db.Persons.ToList();
+            }           
+        }
+
+        public List<Order> GetAllOrders()
+        {
+            using (var db = new projectContext(conn.ConnectionString))
+            {
+                return db.Orders.ToList();
             }
-            
+        }
+
+        public List<Order> GetAllOrdersOfSpasificTable(int idTable)
+        {
+            using (var db = new projectContext(conn.ConnectionString))
+            {
+                return db.Orders.Where(x => x.IdTable == idTable).ToList();
+            }
+        }
+
+        public List<Ration> GetAllRations()
+        {
+            using (var db = new projectContext(conn.ConnectionString))
+            {
+                return db.Rations.ToList();
+            }
+        }
+
+        public List<Ration> GetAllRationsOfSpasificOrder(int idOrder)
+        {
+            using (var db = new projectContext(conn.ConnectionString))
+            {
+                return db.Rations.Where(x => x.OrderId == idOrder).ToList();
+            }
+        }
+
+        public List<Table> GetAllTables()
+        {
+            using (var db = new projectContext(conn.ConnectionString))
+            {
+                return db.Tables.ToList();
+            }
         }
     }
 }
