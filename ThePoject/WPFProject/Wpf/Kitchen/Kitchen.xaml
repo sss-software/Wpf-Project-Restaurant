@@ -1,0 +1,16 @@
+﻿<Window x:Class="Wpf.Kitchen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="320" Height="240"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+
+        AllowsTransparency="True"
+        Background="Transparent"
+        BorderThickness="0">
+    <Border BorderBrush="Black" BorderThickness="1"  CornerRadius="18" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Btn for Debug" Click="DoSometing" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+    </Border>
+</Window>

@@ -1,0 +1,12 @@
+﻿<Window x:Class="Bornander.UI.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:f="clr-namespace:Bornander.UI;assembly=Bornander.UI"
+        xmlns:c="clr-namespace:Bornander.UI.Test.Controls"
+        xmlns:s="clr-namespace:Bornander.UI.Test.Stocks"
+        Title="Main Window" Height="92" Width="128">
+    <StackPanel>
+        <Button Content="Test capabilities" Click="SimpleTest"/>
+        <Button Content="Test application" Click="ComplexTest"/>
+    </StackPanel>
+</Window>
