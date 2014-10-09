@@ -45,3 +45,16 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Login\LoginWindow.
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.g.resources
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.Properties.Resources.resources
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Wpf.exe.config
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BL.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BussinnesEntity.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BL.pdb
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BussinnesEntity.pdb
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\DAL.pdb
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.pdb
