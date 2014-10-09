@@ -16,7 +16,8 @@ namespace Wpf.Login
 
         private ILoadable loadable;
 
-        private string userName = String.Empty;
+        private string userName = string.Empty;
+        private string password = string.Empty;
         private bool isLogInActive = true;
         private Person p = null;
 
@@ -34,7 +35,7 @@ namespace Wpf.Login
                 p = bl.GetPersonByEmail(UserName);
                 IsLogInActive = false; 
                 Notify("MutexIndex", "ErrorTitle");
-                if (p != null)
+                if (p != null && password.Equals(p.Password))
                 {
                     BackgroundWorker worker = new BackgroundWorker();
                     worker.DoWork += (s, e) =>
@@ -60,6 +61,16 @@ namespace Wpf.Login
             {
                 userName = value;
                 Notify("UserName");
+            }
+        }
+
+        public string Password
+        {
+            get { return password; }
+            set
+            {
+                password = value;
+                Notify("Password");
             }
         }
 
