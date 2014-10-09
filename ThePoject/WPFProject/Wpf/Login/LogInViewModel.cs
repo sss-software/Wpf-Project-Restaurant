@@ -27,13 +27,13 @@ namespace Wpf.Login
         {
             this.loadable = loadable;
 
-            LoginCommand = new DelegateCommand(x => UserName.Length > 0, x => 
+            LoginCommand = new DelegateCommand(x => UserName.Length > 0 , x => 
             {
                 BussinesLogic bl = new BussinesLogic();
                 p = bl.GetPersonByEmail(UserName);
                 IsLogInActive = false; 
                 Notify("MutexIndex", "ErrorTitle");
-                if (p != null && password.Equals(p.Password))
+                if (p != null && Password.Equals(p.Password))
                 {
                     BackgroundWorker worker = new BackgroundWorker();
                     worker.DoWork += (s, e) =>
