@@ -15,12 +15,10 @@ namespace Wpf.Login
     {
 
         private ILoadable loadable;
-
         private string userName = string.Empty;
         private string password = string.Empty;
         private bool isLogInActive = true;
         private Person p = null;
-
         private double progress = 0;
 
         public ICommand LoginCommand { get; private set; }// For the login btn
@@ -83,7 +81,6 @@ namespace Wpf.Login
                 Notify("IsLogInActive");
             }
         }
-
 
         public int MutexIndex
         {
