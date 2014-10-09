@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BL
 {
-    class BussinesLogic
+    public class BussinesLogic
     {
         private dal d;
         public BussinesLogic()

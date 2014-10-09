@@ -6,6 +6,8 @@ using System.Windows.Input;
 using System.ComponentModel;
 using System.Threading;
 using System.Windows;
+using BL;
+using BussinnesEntity;
 
 namespace Wpf.Login
 {
@@ -16,6 +18,7 @@ namespace Wpf.Login
 
         private string userName = String.Empty;
         private bool isLogInActive = true;
+        private Person p = null;
 
         private double progress = 0;
 
@@ -26,10 +29,12 @@ namespace Wpf.Login
             this.loadable = loadable;
 
             LoginCommand = new DelegateCommand(x => UserName.Length > 0, x => 
-            { 
+            {
+                BussinesLogic bl = new BussinesLogic();
+                p = bl.GetPersonByEmail(UserName);
                 IsLogInActive = false; 
                 Notify("MutexIndex", "ErrorTitle");
-                if (UserName == "Yadid" || UserName == "Moshe")
+                if (p != null)
                 {
                     BackgroundWorker worker = new BackgroundWorker();
                     worker.DoWork += (s, e) =>
@@ -71,7 +76,7 @@ namespace Wpf.Login
 
         public int MutexIndex
         {
-            get { return (UserName == "Yadid" || UserName == "Moshe") ? 0 : 1; }
+            get { return p != null ? 0 : 1; }
         }
 
         public string ErrorTitle
@@ -86,7 +91,7 @@ namespace Wpf.Login
 
         public string ErrorMessage
         {
-            get { return "The user Name Need to be Yadid Or Moshe"; }
+            get { return "The user not exist in system"; }
         }
 
         private void Notify(params string[] propertyNames)
