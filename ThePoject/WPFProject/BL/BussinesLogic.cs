@@ -14,7 +14,7 @@ namespace BL
         private dal d;
         public BussinesLogic()
         {
-            if(d == null)
+            if (d == null)
             {
                 d = new dal();
             }

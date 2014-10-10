@@ -26,7 +26,10 @@ namespace ProjectContext
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Table>().HasKey(t => new { t.IdTable });
+            modelBuilder.Entity<Table>().HasKey(t => new { t.TableId });
+            modelBuilder.Entity<Order>().HasKey(o => new { o.OrderID });
+            modelBuilder.Entity<Person>().HasKey(p => new { p.PersonId });
+            modelBuilder.Entity<Ration>().HasKey(r => new { r.RationId });
         }
     }
 }

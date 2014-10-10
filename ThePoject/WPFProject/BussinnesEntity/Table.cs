@@ -8,7 +8,7 @@ namespace BussinnesEntity
 {
     public class Table
     {
-        public int IdTable { get; set; }
+        public int TableId { get; set; }
         public int Plasace { get; set; }
     }
 }

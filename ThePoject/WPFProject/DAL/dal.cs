@@ -40,7 +40,7 @@ namespace DAL
         {
             using (var db = new projectContext(conn.ConnectionString))
             {
-                
+
                 if (obj is Person)
                 {
                     try
@@ -134,7 +134,7 @@ namespace DAL
                 if (obj is Table)
                 {
                     Table t = (Table)obj;
-                    var table = db.Tables.FirstOrDefault(x => x.IdTable == t.IdTable);
+                    var table = db.Tables.FirstOrDefault(x => x.TableId == t.TableId);
                     db.Tables.Remove(table);
                     db.SaveChanges();
                 }
@@ -143,24 +143,66 @@ namespace DAL
 
         public void Update(object obj)
         {
-            if (obj is Person)
+            using (var db = new projectContext(conn.ConnectionString))
             {
+                if (obj is Person)
+                {
+                    Person p = (Person)obj;
+                    var person = db.Persons.FirstOrDefault(x => x.PersonId == p.PersonId);
+                    if (person != null)
+                    {
+                        person.PersonId = p.PersonId;
+                        person.FirstName = p.FirstName;
+                        person.LastName = p.LastName;
+                        person.Email = p.Email;
+                        person.Password = p.Password;
+                        person.PersonType = p.PersonType;
+                        db.SaveChanges();
+                    }
+                }
 
-            }
+                if (obj is Ration)
+                {
+                    Ration r = (Ration)obj;
+                    var ration = db.Rations.FirstOrDefault(x => x.RationId == r.RationId);
+                    if (ration != null)
+                    {
+                        ration.RationId = r.RationId;
+                        ration.Price = r.Price;
+                        ration.Description = r.Description;
+                        ration.Done = r.Done;
+                        ration.OrderId = r.OrderId;
+                        //ration.Order = r.Order;
+                        db.SaveChanges();
+                    }
+                }
 
-            if (obj is Ration)
-            {
+                if (obj is Order)
+                {
+                    Order o = (Order)obj;
+                    var order = db.Orders.FirstOrDefault(x => x.OrderID == o.OrderID);
+                    if (order != null)
+                    {
+                        order.OrderID = o.OrderID;
+                        order.RationList = o.RationList;
+                        order.Sum = o.Sum;
+                        order.TableId = o.TableId;
+                        order.Table = o.Table;
+                        db.SaveChanges();
+                    }
+                }
 
-            }
-
-            if (obj is Order)
-            {
-
-            }
-
-            if (obj is Table)
-            {
-
+                if (obj is Table)
+                {
+                    Table t = (Table)obj;
+                    var table = db.Tables.FirstOrDefault(x => x.TableId == t.TableId);
+                    if (table != null)
+                    {
+                        table.TableId = t.TableId;
+                        table.Plasace = t.Plasace;
+                        db.SaveChanges();
+                    }
+                }
             }
         }
 
@@ -168,8 +210,8 @@ namespace DAL
         {
             using (var db = new projectContext(conn.ConnectionString))
             {
-               return db.Persons.ToList();
-            }           
+                return db.Persons.ToList();
+            }
         }
 
         public List<Order> GetAllOrders()
@@ -184,7 +226,7 @@ namespace DAL
         {
             using (var db = new projectContext(conn.ConnectionString))
             {
-                return db.Orders.Where(x => x.IdTable == idTable).ToList();
+                return db.Orders.Where(x => x.TableId == idTable).ToList();
             }
         }
 

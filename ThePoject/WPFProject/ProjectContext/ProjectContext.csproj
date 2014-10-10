@@ -68,13 +68,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201409181743419_FirstMigration.cs" />
-    <Compile Include="Migrations\201409181743419_FirstMigration.Designer.cs">
-      <DependentUpon>201409181743419_FirstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201410101042535_drop all tables.cs" />
+    <Compile Include="Migrations\201410101042535_drop all tables.Designer.cs">
+      <DependentUpon>201410101042535_drop all tables.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201410062045297_scound migration.cs" />
-    <Compile Include="Migrations\201410062045297_scound migration.Designer.cs">
-      <DependentUpon>201410062045297_scound migration.cs</DependentUpon>
+    <Compile Include="Migrations\201410101046042_create all db.cs" />
+    <Compile Include="Migrations\201410101046042_create all db.Designer.cs">
+      <DependentUpon>201410101046042_create all db.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="projectContext.cs" />
@@ -109,17 +109,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201409181743419_FirstMigration.resx">
-      <DependentUpon>201409181743419_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410062045297_scound migration.resx">
-      <DependentUpon>201410062045297_scound migration.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="App_Readme\Spring.Rest.txt" />
     <Content Include="App_Readme\Spring.Social.Core.txt" />
     <Content Include="NuGet\NuGetPackage.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201410101042535_drop all tables.resx">
+      <DependentUpon>201410101042535_drop all tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410101046042_create all db.resx">
+      <DependentUpon>201410101046042_create all db.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
