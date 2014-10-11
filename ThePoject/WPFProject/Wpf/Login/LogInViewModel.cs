@@ -46,7 +46,7 @@ namespace Wpf.Login
                                 Notify("Progress");
                             }
                         };
-                    worker.RunWorkerCompleted += (s, e) => loadable.Loaded(UserName);
+                    worker.RunWorkerCompleted += (s, e) => loadable.Loaded(p.PersonType);
                     worker.RunWorkerAsync();
                 }
             });
