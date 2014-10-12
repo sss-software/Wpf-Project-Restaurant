@@ -1,0 +1,14 @@
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\DAL.dll.config
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\DAL.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\DAL.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\BussinnesEntity.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\EntityFramework.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\ProjectContext.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\BussinnesEntity.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\ProjectContext.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\EntityFramework.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.pdb

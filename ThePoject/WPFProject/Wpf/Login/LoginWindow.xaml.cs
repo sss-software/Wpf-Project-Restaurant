@@ -25,7 +25,7 @@ namespace Wpf.Login
                 switch (type)
                 {
                     case BussinnesEntity.Type.chef:
-                        Window window = new Kitchen();
+                        Window window = new KitchenWindow();
                         window.Show();
                     break;
                     case BussinnesEntity.Type.manager:

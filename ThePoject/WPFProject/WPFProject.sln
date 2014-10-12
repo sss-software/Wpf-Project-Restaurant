@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinnessEntity", "BussinnesEntity\BusinnessEntity.csproj", "{AF25CF7D-F0EB-4EAD-A1B0-BBD8D5E65BCC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{4AACDE86-0DD0-4BD4-A593-A1A6201133C9}"
@@ -16,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.FliperView", "Bornander.UI\UI.FliperView.csproj", "{343CFDA3-DC75-4331-BC4C-3AA1A06DB495}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{3F550EA9-7230-41BF-836E-D37F694BCB0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bornander.Wpf.Meshes", "Bornander.Wpf.Meshes\Bornander.Wpf.Meshes.csproj", "{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bornander.UI.TabCarousel", "Bornander.UI.TabCarousel\Bornander.UI.TabCarousel.csproj", "{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,26 @@ Global
 		{3F550EA9-7230-41BF-836E-D37F694BCB0B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3F550EA9-7230-41BF-836E-D37F694BCB0B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{3F550EA9-7230-41BF-836E-D37F694BCB0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}.Release|x86.ActiveCfg = Release|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{126CE79B-F551-4EE2-8F92-CA4B145E1AF7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

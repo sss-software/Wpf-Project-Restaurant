@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\
 Wpf
 none
 false
 DEBUG;TRACE
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\App.xaml
-51536988037
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\App.xaml
+7-59867714
 
-15651112240
-19-1478661525
-Login\ErrorPanel.xaml;Login\LogInPanel.xaml;Login\LoginWindow.xaml;Login\SplashControl.xaml;Kitchen\Kitchen.xaml;
+17-1668296540
+20-1652751173
+Login\ErrorPanel.xaml;Login\LogInPanel.xaml;Login\LoginWindow.xaml;Login\SplashControl.xaml;Kitchen\KitchenWindow.xaml;Manager\ManagerWindow.xaml;Waiter\WaiterWindow.xaml;
 
 False
 

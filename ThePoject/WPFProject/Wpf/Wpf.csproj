@@ -66,6 +66,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Waiter\WaiterWindow.xaml.cs">
+      <DependentUpon>WaiterWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Login\ErrorPanel.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -82,7 +85,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Kitchen\Kitchen.xaml">
+    <Page Include="Kitchen\KitchenWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -104,12 +107,23 @@
     <Compile Include="Login\SplashControl.xaml.cs">
       <DependentUpon>SplashControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kitchen\Kitchen.xaml.cs">
-      <DependentUpon>Kitchen.xaml</DependentUpon>
+    <Compile Include="Kitchen\KitchenWindow.xaml.cs">
+      <DependentUpon>KitchenWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Manager\ManagerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Waiter\WaiterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\ManagerWindow.xaml.cs">
+      <DependentUpon>ManagerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -144,6 +158,10 @@
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{4aacde86-0dd0-4bd4-a593-a1a6201133c9}</Project>
       <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bornander.UI.TabCarousel\Bornander.UI.TabCarousel.csproj">
+      <Project>{126ce79b-f551-4ee2-8f92-ca4b145e1af7}</Project>
+      <Name>Bornander.UI.TabCarousel</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bornander.UI\UI.FliperView.csproj">
       <Project>{343cfda3-dc75-4331-bc4c-3aa1a06db495}</Project>

@@ -33,3 +33,5 @@
 \\psf\Home\git\Wpf-Project-Restaurant\CodeExamples\FlipPanelCSV2\Bornander.UI.Test\obj\x86\Debug\Bornander.UI.Test.csproj.GenerateResource.Cache
 \\psf\Home\git\Wpf-Project-Restaurant\CodeExamples\FlipPanelCSV2\Bornander.UI.Test\obj\x86\Debug\Bornander.UI.Test.exe
 \\psf\Home\git\Wpf-Project-Restaurant\CodeExamples\FlipPanelCSV2\Bornander.UI.Test\obj\x86\Debug\Bornander.UI.Test.pdb
+Z:\git\Wpf-Project-Restaurant\CodeExamples\FlipPanelCSV2\Bornander.UI.Test\obj\x86\Debug\Bornander.UI.Test.exe
+Z:\git\Wpf-Project-Restaurant\CodeExamples\FlipPanelCSV2\Bornander.UI.Test\obj\x86\Debug\Bornander.UI.Test.pdb

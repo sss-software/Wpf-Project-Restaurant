@@ -1,0 +1,15 @@
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\Test.exe.config
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\Test.exe
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\Test.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\BussinnesEntity.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\DAL.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\EntityFramework.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\EntityFramework.SqlServer.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\ProjectContext.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\BussinnesEntity.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\DAL.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\EntityFramework.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\EntityFramework.SqlServer.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\bin\Debug\ProjectContext.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\obj\Debug\Test.exe
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Test\obj\Debug\Test.pdb

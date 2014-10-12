@@ -1,0 +1,16 @@
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\ProjectContext.dll.config
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\ProjectContext.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\ProjectContext.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\BussinnesEntity.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\EntityFramework.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\EntityFramework.SqlServer.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Para.FluentModelBuilder.XAF.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\BussinnesEntity.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\EntityFramework.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\EntityFramework.SqlServer.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csprojResolveAssemblyReference.cache
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.dropalltables.resources
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.createalldb.resources
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csproj.GenerateResource.Cache
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.pdb

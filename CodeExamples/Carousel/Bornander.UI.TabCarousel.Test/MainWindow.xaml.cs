@@ -46,7 +46,7 @@ namespace Bornander.UI.TabCarousel.Test
             //TabControl.AddTab(CreateFixedSizeLabel("G", new Size(1024, 768)));
             //TabControl.NumberOfTabs = 8;
 
-            TabControl.NumberOfTabs = 4;
+            TabControl.NumberOfTabs = 9;
             TabControl.AnimationDuration = 2000;
         
         }
