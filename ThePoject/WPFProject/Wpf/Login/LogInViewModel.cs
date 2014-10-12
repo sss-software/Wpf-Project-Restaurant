@@ -22,6 +22,7 @@ namespace Wpf.Login
         private double progress = 0;
 
         public ICommand LoginCommand { get; private set; }// For the login btn
+        public ICommand CancelCommand { get; private set; }// For the login btn
         public ICommand ErrorOkCommand { get; private set; }// For the Ok btn that in the error panel
         public LogInViewModel(ILoadable loadable)
         {
@@ -51,6 +52,11 @@ namespace Wpf.Login
                 }
             });
             ErrorOkCommand = new DelegateCommand(x => IsLogInActive = true);
+
+            CancelCommand = new DelegateCommand(x =>
+            {
+                loadable.Cancel();
+            });
         }
 
 

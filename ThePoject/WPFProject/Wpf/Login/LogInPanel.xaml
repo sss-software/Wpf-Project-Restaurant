@@ -37,7 +37,7 @@
                     <ColumnDefinition Width=".5*"/>
                 </Grid.ColumnDefinitions>
                 <Button Grid.Column="1" Margin="5" Content="Login" Command="{Binding Path=LoginCommand, Mode=OneWay}"/>
-                <Button Grid.Column="2" Margin="5" Content="Cancel" />
+                <Button Grid.Column="2" Margin="5" Content="Cancel" Command="{Binding Path=CancelCommand, Mode=OneWay}"/>
             </Grid>
         </Grid>
     </Border>

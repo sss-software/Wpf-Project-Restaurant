@@ -6,6 +6,7 @@ namespace Wpf.Login
     public interface ILoadable
     {
         void Loaded(BussinnesEntity.Type type);
+        void Cancel();
     }
 
     public partial class LoginWindow : Window, ILoadable
@@ -36,6 +37,11 @@ namespace Wpf.Login
                 }
                 
             }));
+        }
+
+        public new void Cancel()
+        {
+            this.Hide();
         }
     }
 }
