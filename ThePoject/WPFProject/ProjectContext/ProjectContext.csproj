@@ -86,9 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BussinnesEntity\BusinnessEntity.csproj">
+    <ProjectReference Include="..\BussinnesEntity\BussinessEntity.csproj">
       <Project>{af25cf7d-f0eb-4ead-a1b0-bbd8d5e65bcc}</Project>
-      <Name>BusinnessEntity</Name>
+      <Name>BussinessEntity</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

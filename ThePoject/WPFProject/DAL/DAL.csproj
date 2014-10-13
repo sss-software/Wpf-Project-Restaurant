@@ -72,9 +72,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BussinnesEntity\BusinnessEntity.csproj">
+    <ProjectReference Include="..\BussinnesEntity\BussinessEntity.csproj">
       <Project>{af25cf7d-f0eb-4ead-a1b0-bbd8d5e65bcc}</Project>
-      <Name>BusinnessEntity</Name>
+      <Name>BussinessEntity</Name>
     </ProjectReference>
     <ProjectReference Include="..\ProjectContext\ProjectContext.csproj">
       <Project>{8c2a2cc7-d0e0-4dbb-99a0-a7b3d370a999}</Project>

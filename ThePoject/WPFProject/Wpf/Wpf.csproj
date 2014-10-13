@@ -167,9 +167,9 @@
       <Project>{343cfda3-dc75-4331-bc4c-3aa1a06db495}</Project>
       <Name>UI.FliperView</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BussinnesEntity\BusinnessEntity.csproj">
+    <ProjectReference Include="..\BussinnesEntity\BussinessEntity.csproj">
       <Project>{af25cf7d-f0eb-4ead-a1b0-bbd8d5e65bcc}</Project>
-      <Name>BusinnessEntity</Name>
+      <Name>BussinessEntity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

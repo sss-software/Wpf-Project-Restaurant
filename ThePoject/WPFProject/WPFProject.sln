@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinnessEntity", "BussinnesEntity\BusinnessEntity.csproj", "{AF25CF7D-F0EB-4EAD-A1B0-BBD8D5E65BCC}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessEntity", "BussinnesEntity\BussinessEntity.csproj", "{AF25CF7D-F0EB-4EAD-A1B0-BBD8D5E65BCC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{4AACDE86-0DD0-4BD4-A593-A1A6201133C9}"
 EndProject
