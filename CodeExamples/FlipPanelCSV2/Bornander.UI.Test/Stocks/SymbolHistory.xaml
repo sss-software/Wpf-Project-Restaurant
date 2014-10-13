@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Bornander.UI.Test.Stocks.SymbolHistory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:Bornander.UI.Test.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="128" d:DesignWidth="420">
+    <UserControl.Resources>
+        <Style TargetType="Label" x:Key="graphLabel">
+            <Style.Setters>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style.Setters>
+        </Style>        
+        <LinearGradientBrush x:Key="graphBackground"  StartPoint="0.5, 0" EndPoint="0.5, 1">
+            <GradientStop Color="#F0F0F0" Offset="0"/>
+            <GradientStop Color="#101020" Offset="0.2"/>
+            <GradientStop Color="#101020" Offset="0.5"/>
+            <GradientStop Color="#101020" Offset="0.8"/>
+            <GradientStop Color="#000000" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <Pen x:Key="graphLine" Brush="Yellow" Thickness="2.0"/>
+        <Pen x:Key="graphAverageLine" Brush="DarkGoldenrod" Thickness="1.0"/>
+
+    </UserControl.Resources>
+    <Border BorderBrush="Black" BorderThickness="2">
+        <Grid Background="{StaticResource ResourceKey=graphBackground}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="{Binding Path=Max, Mode=OneWay, Converter={StaticResource ResourceKey=doubleToAmount}}" Style="{StaticResource ResourceKey=graphLabel}"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="{Binding Path=Min, Mode=OneWay, Converter={StaticResource ResourceKey=doubleToAmount}}" Style="{StaticResource ResourceKey=graphLabel}"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding Path=Name, Mode=OneWay}" HorizontalContentAlignment="Right" Style="{StaticResource ResourceKey=graphLabel}"/>
+            <c:SimpleGraph Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Max="{Binding Path=Max, Mode=OneWay}" Min="{Binding Path=Min, Mode=OneWay}" Values="{Binding Path=History, Mode=OneWay}" LinePen="{StaticResource ResourceKey=graphLine}" AverageLinePen="{StaticResource ResourceKey=graphAverageLine}" />
+        </Grid>
+    </Border>
+</UserControl>

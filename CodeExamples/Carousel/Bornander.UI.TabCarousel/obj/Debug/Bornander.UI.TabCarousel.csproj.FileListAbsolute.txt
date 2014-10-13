@@ -1,0 +1,11 @@
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\bin\Debug\Bornander.UI.TabCarousel.dll
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\bin\Debug\Bornander.UI.TabCarousel.pdb
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\bin\Debug\Bornander.Wpf.Meshes.dll
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\bin\Debug\Bornander.Wpf.Meshes.pdb
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Bornander.UI.TabCarousel.csprojResolveAssemblyReference.cache
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Carousel.baml
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Carousel.g.cs
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Bornander.UI.TabCarousel_MarkupCompile.cache
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Bornander.UI.TabCarousel.g.resources
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Bornander.UI.TabCarousel.dll
+Z:\git\Wpf-Project-Restaurant\CodeExamples\Carousel\Bornander.UI.TabCarousel\obj\Debug\Bornander.UI.TabCarousel.pdb
