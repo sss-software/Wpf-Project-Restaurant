@@ -44,7 +44,7 @@ namespace Wpf
                 //TODO: TabControl.AddTab(new RationKitchenUserControl());
             }
             
-            TabControl.NumberOfTabs = NotDoneRationList.Count;
+            //TabControl.NumberOfTabs = NotDoneRationList.Count;
 
             TabControl.AnimationDuration = 2000;
         }
