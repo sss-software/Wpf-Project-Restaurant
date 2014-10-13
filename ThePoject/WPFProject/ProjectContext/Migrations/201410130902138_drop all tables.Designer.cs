@@ -13,7 +13,7 @@ namespace ProjectContext.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201410101042535_drop all tables"; }
+            get { return "201410130902138_drop all tables"; }
         }
         
         string IMigrationMetadata.Source

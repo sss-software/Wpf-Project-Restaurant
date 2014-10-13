@@ -120,18 +120,14 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.TabCa
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BussinnesEntity.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\DAL.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.Wpf.Meshes.dll
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BL.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.TabCarousel.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\BussinnesEntity.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.xml
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\DAL.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.Wpf.Meshes.pdb
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Login\ErrorPanel.baml
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Login\LogInPanel.baml
@@ -157,3 +153,7 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.csproj.Generat
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.exe
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\DAL.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\DAL.pdb
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.pdb

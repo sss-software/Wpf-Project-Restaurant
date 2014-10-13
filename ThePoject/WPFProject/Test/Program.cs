@@ -12,7 +12,7 @@ namespace Test
         static void Main(string[] args)
         {
             dal d = new dal();
-            foreach(var person in d.GetAllPersons())
+            foreach (var person in d.GetAllPersons())
             {
                 Console.WriteLine(person.FirstName + " " + person.LastName + " " + person.PersonType.ToString());
             }

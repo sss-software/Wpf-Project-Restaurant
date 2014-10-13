@@ -27,15 +27,15 @@ namespace Wpf.Login
                     case BussinnesEntity.Type.chef:
                         Window window = new KitchenWindow();
                         window.Show();
-                    break;
+                        break;
                     case BussinnesEntity.Type.manager:
-                    break;
+                        break;
                     case BussinnesEntity.Type.waiter:
-                    break;
+                        break;
                     default:
-                    break;
+                        break;
                 }
-                
+
             }));
         }
 

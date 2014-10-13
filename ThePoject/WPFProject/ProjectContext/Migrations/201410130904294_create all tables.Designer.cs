@@ -7,13 +7,13 @@ namespace ProjectContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class Changenamefileds : IMigrationMetadata
+    public sealed partial class createalltables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Changenamefileds));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(createalltables));
         
         string IMigrationMetadata.Id
         {
-            get { return "201410130835186_Change name fileds"; }
+            get { return "201410130904294_create all tables"; }
         }
         
         string IMigrationMetadata.Source

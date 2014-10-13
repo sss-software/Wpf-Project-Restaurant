@@ -7,9 +7,9 @@ namespace ProjectContext.Migrations
     {
         public override void Up()
         {
-            DropForeignKey("dbo.Orders", "IdTable", "dbo.Tables");
+            DropForeignKey("dbo.Orders", "TableId", "dbo.Tables");
             DropForeignKey("dbo.Rations", "OrderId", "dbo.Orders");
-            DropIndex("dbo.Orders", new[] { "IdTable" });
+            DropIndex("dbo.Orders", new[] { "TableId" });
             DropIndex("dbo.Rations", new[] { "OrderId" });
             DropTable("dbo.Orders");
             DropTable("dbo.Tables");
@@ -26,7 +26,7 @@ namespace ProjectContext.Migrations
                         RationId = c.Int(nullable: false, identity: true),
                         Price = c.Double(nullable: false),
                         Description = c.String(),
-                        Done = c.Boolean(nullable: false),
+                        RationDone = c.Boolean(),
                         OrderId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.RationId);
@@ -48,10 +48,10 @@ namespace ProjectContext.Migrations
                 "dbo.Tables",
                 c => new
                     {
-                        IdTable = c.Int(nullable: false, identity: true),
+                        TableId = c.Int(nullable: false, identity: true),
                         Plasace = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.IdTable);
+                .PrimaryKey(t => t.TableId);
             
             CreateTable(
                 "dbo.Orders",
@@ -59,15 +59,15 @@ namespace ProjectContext.Migrations
                     {
                         OrderID = c.Int(nullable: false, identity: true),
                         Sum = c.Double(nullable: false),
-                        Done = c.Boolean(nullable: false),
-                        IdTable = c.Int(nullable: false),
+                        OrderDone = c.Boolean(),
+                        TableId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.OrderID);
             
             CreateIndex("dbo.Rations", "OrderId");
-            CreateIndex("dbo.Orders", "IdTable");
+            CreateIndex("dbo.Orders", "TableId");
             AddForeignKey("dbo.Rations", "OrderId", "dbo.Orders", "OrderID", cascadeDelete: true);
-            AddForeignKey("dbo.Orders", "IdTable", "dbo.Tables", "IdTable", cascadeDelete: true);
+            AddForeignKey("dbo.Orders", "TableId", "dbo.Tables", "TableId", cascadeDelete: true);
         }
     }
 }

@@ -6,8 +6,8 @@ using System.Windows.Input;
 using System.ComponentModel;
 using System.Threading;
 using System.Windows;
-using BL;
-using BussinnesEntity;
+//using BL;
+//using BussinnesEntity;
 
 namespace Wpf.Login
 {
@@ -18,7 +18,7 @@ namespace Wpf.Login
         private string userName = string.Empty;
         private string password = string.Empty;
         private bool isLogInActive = true;
-        private Person p = null;
+        //private Person p = null;
         private double progress = 0;
 
         public ICommand LoginCommand { get; private set; }// For the login btn
@@ -30,26 +30,26 @@ namespace Wpf.Login
 
             LoginCommand = new DelegateCommand(x => UserName.Length > 0, x =>
             {
-                BussinesLogic bl = new BussinesLogic();
-                p = bl.GetPersonByEmail(UserName);
+                //BussinesLogic bl = new BussinesLogic();
+                //p = bl.GetPersonByEmail(UserName);
                 IsLogInActive = false;
                 Notify("MutexIndex", "ErrorTitle");
 
-                if (p != null && Password.Equals(p.Password))
-                {
-                    BackgroundWorker worker = new BackgroundWorker();
-                    worker.DoWork += (s, e) =>
-                        {
-                            while (progress < 1)
-                            {
-                                Thread.Sleep(50);
-                                progress += 0.01;
-                                Notify("Progress");
-                            }
-                        };
-                    worker.RunWorkerCompleted += (s, e) => loadable.Loaded(p.PersonType);
-                    worker.RunWorkerAsync();
-                }
+                //if (p != null && Password.Equals(p.Password))
+                //{
+                //    BackgroundWorker worker = new BackgroundWorker();
+                //    worker.DoWork += (s, e) =>
+                //        {
+                //            while (progress < 1)
+                //            {
+                //                Thread.Sleep(50);
+                //                progress += 0.01;
+                //                Notify("Progress");
+                //            }
+                //        };
+                //    worker.RunWorkerCompleted += (s, e) => loadable.Loaded(p.PersonType);
+                //    worker.RunWorkerAsync();
+                //}
             });
             ErrorOkCommand = new DelegateCommand(x => IsLogInActive = true);
 
@@ -92,7 +92,8 @@ namespace Wpf.Login
 
         public int MutexIndex
         {
-            get { return p != null ? 0 : 1; }
+            get { return 0; }
+            //get { return p != null ? 0 : 1; }
         }
 
         public string ErrorTitle

@@ -3,7 +3,7 @@ namespace ProjectContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class createalldb : DbMigration
+    public partial class createalltables : DbMigration
     {
         public override void Up()
         {
@@ -13,7 +13,7 @@ namespace ProjectContext.Migrations
                     {
                         OrderID = c.Int(nullable: false, identity: true),
                         Sum = c.Double(nullable: false),
-                        Done = c.Boolean(nullable: false),
+                        OrderDone = c.Boolean(),
                         TableId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.OrderID)
@@ -49,16 +49,20 @@ namespace ProjectContext.Migrations
                         RationId = c.Int(nullable: false, identity: true),
                         Price = c.Double(nullable: false),
                         Description = c.String(),
-                        Done = c.Boolean(nullable: false),
+                        RationDone = c.Boolean(),
                         OrderId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.RationId);
+                .PrimaryKey(t => t.RationId)
+                .ForeignKey("dbo.Orders", t => t.OrderId, cascadeDelete: true)
+                .Index(t => t.OrderId);
             
         }
         
         public override void Down()
         {
+            DropForeignKey("dbo.Rations", "OrderId", "dbo.Orders");
             DropForeignKey("dbo.Orders", "TableId", "dbo.Tables");
+            DropIndex("dbo.Rations", new[] { "OrderId" });
             DropIndex("dbo.Orders", new[] { "TableId" });
             DropTable("dbo.Rations");
             DropTable("dbo.People");

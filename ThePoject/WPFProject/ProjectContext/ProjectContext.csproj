@@ -68,25 +68,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201410101042535_drop all tables.cs" />
-    <Compile Include="Migrations\201410101042535_drop all tables.Designer.cs">
-      <DependentUpon>201410101042535_drop all tables.cs</DependentUpon>
+    <Compile Include="Migrations\201410130902138_drop all tables.cs" />
+    <Compile Include="Migrations\201410130902138_drop all tables.Designer.cs">
+      <DependentUpon>201410130902138_drop all tables.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201410101046042_create all db.cs" />
-    <Compile Include="Migrations\201410101046042_create all db.Designer.cs">
-      <DependentUpon>201410101046042_create all db.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201410130801064_rtyuipo.cs" />
-    <Compile Include="Migrations\201410130801064_rtyuipo.Designer.cs">
-      <DependentUpon>201410130801064_rtyuipo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201410130829238_nullebl column done.cs" />
-    <Compile Include="Migrations\201410130829238_nullebl column done.Designer.cs">
-      <DependentUpon>201410130829238_nullebl column done.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201410130835186_Change name fileds.cs" />
-    <Compile Include="Migrations\201410130835186_Change name fileds.Designer.cs">
-      <DependentUpon>201410130835186_Change name fileds.cs</DependentUpon>
+    <Compile Include="Migrations\201410130904294_create all tables.cs" />
+    <Compile Include="Migrations\201410130904294_create all tables.Designer.cs">
+      <DependentUpon>201410130904294_create all tables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="projectContext.cs" />
@@ -126,20 +114,11 @@
     <Content Include="NuGet\NuGetPackage.txt" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201410101042535_drop all tables.resx">
-      <DependentUpon>201410101042535_drop all tables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201410130902138_drop all tables.resx">
+      <DependentUpon>201410130902138_drop all tables.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410101046042_create all db.resx">
-      <DependentUpon>201410101046042_create all db.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410130801064_rtyuipo.resx">
-      <DependentUpon>201410130801064_rtyuipo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410130829238_nullebl column done.resx">
-      <DependentUpon>201410130829238_nullebl column done.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410130835186_Change name fileds.resx">
-      <DependentUpon>201410130835186_Change name fileds.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201410130904294_create all tables.resx">
+      <DependentUpon>201410130904294_create all tables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

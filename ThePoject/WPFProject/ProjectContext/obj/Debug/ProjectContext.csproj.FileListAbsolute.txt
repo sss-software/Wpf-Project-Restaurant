@@ -59,11 +59,8 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Social.Core.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Social.Core.xml
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.dropalltables.resources
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.createalldb.resources
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.rtyuipo.resources
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.pdb
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.nulleblcolumndone.resources
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.Changenamefileds.resources
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.dropalltables.resources
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.createalltables.resources

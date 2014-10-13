@@ -51,7 +51,6 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\GithubNugetDistribu
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Octokit.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Spring.Rest.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Spring.Social.Core.dll
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\ProjectContext.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\BussinnesEntity.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\DAL.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\EntityFramework.xml
@@ -60,7 +59,8 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Spring.Rest.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Spring.Rest.xml
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Spring.Social.Core.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\Spring.Social.Core.xml
-C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\ProjectContext.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\obj\Debug\BL.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\obj\Debug\BL.pdb
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\ProjectContext.dll
+C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\ProjectContext.pdb

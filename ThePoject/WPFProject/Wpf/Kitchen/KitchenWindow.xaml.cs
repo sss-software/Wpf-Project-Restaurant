@@ -43,8 +43,8 @@ namespace Wpf
                 TabControl.AddTab(CreateFixedSizeLabel(item.Description, new Size(320, 240)));
                 //TODO: TabControl.AddTab(new RationKitchenUserControl());
             }
-            
-            //TabControl.NumberOfTabs = NotDoneRationList.Count;
+
+            TabControl.NumberOfTabs = NotDoneRationList.Count;
 
             TabControl.AnimationDuration = 2000;
         }
