@@ -36,7 +36,7 @@ namespace Wpf
 
 
             BussinesLogic bl = new BussinesLogic();
-
+            List<Ration> allNotDoneRationList = bl.GetAllRations();
             List<Ration> NotDoneRationList = bl.GetAllRations().Where(x => x.Done == false).ToList();
             foreach (Ration item in NotDoneRationList)
             {

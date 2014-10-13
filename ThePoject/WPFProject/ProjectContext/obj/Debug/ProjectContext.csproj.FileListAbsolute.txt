@@ -9,9 +9,6 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Buss
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\EntityFramework.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\EntityFramework.SqlServer.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csprojResolveAssemblyReference.cache
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.dropalltables.resources
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.Migrations.createalldb.resources
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csproj.GenerateResource.Cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.pdb
 C:\Users\Admin\Desktop\Git\Wpf-Project-Restaurant-master\ThePoject\WPFProject\ProjectContext\bin\Debug\ProjectContext.dll.config
@@ -64,3 +61,12 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\Project
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\ProjectContext\obj\Debug\ProjectContext.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Common.Logging.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\GithubNugetDistributor.exe
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Octokit.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Rest.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Social.Core.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Rest.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Rest.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Social.Core.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\ProjectContext\bin\Debug\Spring.Social.Core.xml

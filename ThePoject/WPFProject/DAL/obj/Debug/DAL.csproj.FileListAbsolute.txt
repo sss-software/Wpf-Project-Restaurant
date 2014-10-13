@@ -58,3 +58,12 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\obj\Debug\DAL.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\obj\Debug\DAL.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Common.Logging.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\GithubNugetDistributor.exe
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Octokit.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Rest.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Rest.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Rest.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core.xml
