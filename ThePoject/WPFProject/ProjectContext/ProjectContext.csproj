@@ -76,6 +76,10 @@
     <Compile Include="Migrations\201410101046042_create all db.Designer.cs">
       <DependentUpon>201410101046042_create all db.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201410130801064_rtyuipo.cs" />
+    <Compile Include="Migrations\201410130801064_rtyuipo.Designer.cs">
+      <DependentUpon>201410130801064_rtyuipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="projectContext.cs" />
     <Compile Include="ProjectData.designer.cs">
@@ -119,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201410101046042_create all db.resx">
       <DependentUpon>201410101046042_create all db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410130801064_rtyuipo.resx">
+      <DependentUpon>201410130801064_rtyuipo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
