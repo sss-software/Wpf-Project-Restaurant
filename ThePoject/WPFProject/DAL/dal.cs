@@ -186,6 +186,7 @@ namespace DAL
                         order.OrderID = o.OrderID;
                         order.RationList = o.RationList;
                         order.Sum = o.Sum;
+                        order.Done = o.Done;
                         order.TableId = o.TableId;
                         order.Table = o.Table;
                         db.SaveChanges();

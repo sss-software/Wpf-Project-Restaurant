@@ -13,7 +13,7 @@ namespace BussinnesEntity
         public string Description { get; set; }
         public bool Done { get; set; }
         public int OrderId { get; set; }
-        //public virtual Order Order { get; set; }
+        public virtual Order Order { get; set; }
 
     }
 }
