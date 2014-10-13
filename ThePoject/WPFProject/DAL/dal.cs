@@ -170,7 +170,7 @@ namespace DAL
                         ration.RationId = r.RationId;
                         ration.Price = r.Price;
                         ration.Description = r.Description;
-                        ration.Done = r.Done;
+                        ration.RationDone = r.RationDone;
                         ration.OrderId = r.OrderId;
                         //ration.Order = r.Order;
                         db.SaveChanges();
@@ -186,7 +186,7 @@ namespace DAL
                         order.OrderID = o.OrderID;
                         order.RationList = o.RationList;
                         order.Sum = o.Sum;
-                        order.Done = o.Done;
+                        order.OrderDone = o.OrderDone;
                         order.TableId = o.TableId;
                         order.Table = o.Table;
                         db.SaveChanges();

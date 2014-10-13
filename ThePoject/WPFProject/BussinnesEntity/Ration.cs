@@ -11,7 +11,7 @@ namespace BussinnesEntity
         public int RationId { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
-        public bool Done { get; set; }
+        public bool? RationDone { get; set; }
         public int OrderId { get; set; }
         public virtual Order Order { get; set; }
 

@@ -37,7 +37,7 @@ namespace Wpf
 
             BussinesLogic bl = new BussinesLogic();
 
-            List<Ration> NotDoneRationList = bl.GetAllRations().Where(x => x.Done == false).ToList();
+            List<Ration> NotDoneRationList = bl.GetAllRations();//.Where(x => x.RationDone == false).ToList();
             foreach (Ration item in NotDoneRationList)
             {
                 TabControl.AddTab(CreateFixedSizeLabel(item.Description, new Size(320, 240)));
