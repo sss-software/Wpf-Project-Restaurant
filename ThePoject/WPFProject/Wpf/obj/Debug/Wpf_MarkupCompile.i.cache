@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\App.xaml
-7-59867714
+9-1937687406
 
-17-1668296540
-20-1652751173
-Login\ErrorPanel.xaml;Login\LogInPanel.xaml;Login\LoginWindow.xaml;Login\SplashControl.xaml;Kitchen\KitchenWindow.xaml;Manager\ManagerWindow.xaml;Waiter\WaiterWindow.xaml;
+2399160630
+22-1875177407
+Login\ErrorPanel.xaml;Login\LogInPanel.xaml;Login\LoginWindow.xaml;Login\SplashControl.xaml;Kitchen\KitchenWindow.xaml;Manager\ManagerWindow.xaml;Waiter\DetailView.xaml;Waiter\ListView.xaml;Waiter\WaiterWindow.xaml;
 
 True
 

@@ -1,8 +1,3 @@
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\Bornander.Wpf.Meshes.dll
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\Bornander.Wpf.Meshes.pdb
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.csprojResolveAssemblyReference.cache
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.dll
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.pdb
 C:\Users\Admin\Desktop\Git\Wpf-Project-Restaurant-master\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\Bornander.Wpf.Meshes.dll
 C:\Users\Admin\Desktop\Git\Wpf-Project-Restaurant-master\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\Bornander.Wpf.Meshes.pdb
 C:\Users\Admin\Desktop\Git\Wpf-Project-Restaurant-master\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.csprojResolveAssemblyReference.cache
@@ -13,3 +8,7 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\B
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\Bornander.Wpf.Meshes.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\bin\Debug\Bornander.Wpf.Meshes.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.Wpf.Meshes\obj\Debug\Bornander.Wpf.Meshes.pdb

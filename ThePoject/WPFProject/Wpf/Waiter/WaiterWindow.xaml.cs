@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BL;
+using BussinnesEntity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,26 @@ namespace Wpf.Waiter
         public WaiterWindow()
         {
             InitializeComponent();
+            DataContext = new OrderViewModel();
+        }
+
+        public BussinesLogic bl { get; set; }
+        /*public WaiterWindow()
+        {
+            InitializeComponent();
+            bl = new BussinesLogic();
+            List<Ration> rations = bl.GetAllRations();
+            List<Order> orders = bl.GetAllOrders();
+        }*/
+
+        public void UpdateRation(Ration ration)
+        {
+            bl.Update(ration);
+        }
+
+        public void UpdateOrder(Order order)
+        {
+            bl.Update(order);
         }
     }
 }

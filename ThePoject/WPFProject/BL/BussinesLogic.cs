@@ -52,6 +52,16 @@ namespace BL
 
         public List<Ration> GetAllRations()
         {
+            /*Table t = new Table() { Plasace = 10 };
+            d.Insert(t);
+            Order o = new Order() { Sum = 50, TableId = 1, OrderDone = false };
+            d.Insert(o);
+            var y = d.GetAllTables();
+            var z = d.GetAllOrders();
+            Ration r1 = new Ration() { Description = "r1", Price = 3.5, OrderId = 1, RationDone = false };
+            Ration r2 = new Ration() { Description = "r2", Price = 4.5, OrderId = 1, RationDone = true };
+            d.Insert(r1);
+            d.Insert(r2);*/
             return d.GetAllRations();
         }
 
