@@ -1,5 +1,7 @@
 ﻿using System.Windows;
 using System;
+using Wpf.Manager;
+using Wpf.Waiter;
 
 namespace Wpf.Login
 {
@@ -22,15 +24,20 @@ namespace Wpf.Login
             Dispatcher.Invoke(new Action(delegate
             {
                 Hide();
+                Window window ;
                 switch (type)
                 {
                     case BussinnesEntity.Type.chef:
-                        Window window = new KitchenWindow();
+                        window = new KitchenWindow();
                         window.Show();
                     break;
                     case BussinnesEntity.Type.manager:
+                        window = new ManagerWindow();
+                        window.Show();
                     break;
                     case BussinnesEntity.Type.waiter:
+                        window = new WaiterWindow();
+                        window.Show();
                     break;
                     default:
                     break;

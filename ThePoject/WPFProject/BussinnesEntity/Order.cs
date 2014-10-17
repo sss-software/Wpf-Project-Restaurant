@@ -14,5 +14,6 @@ namespace BussinnesEntity
         public IEnumerable<Ration> RationList { get; set; }
         public int TableId { get; set; }
         public virtual Table Table { get; set; }
+        public string Notes { get; set; }
     }
 }

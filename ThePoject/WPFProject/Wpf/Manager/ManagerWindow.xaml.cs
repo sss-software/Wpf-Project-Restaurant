@@ -1,5 +1,4 @@
-﻿using BL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,25 +11,19 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Wpf.Waiter;
 
 namespace Wpf.Manager
 {
     /// <summary>
-    /// Interaction logic for ManagerWindow.xaml
+    /// Interaction logic for FlipList.xaml
     /// </summary>
     public partial class ManagerWindow : Window
     {
-        public BussinesLogic bl { get; set; }
         public ManagerWindow()
         {
             InitializeComponent();
-            bl = new BussinesLogic();
-            List<BussinnesEntity.Table> tabels = bl.GetAllTables();
-        }
-
-        public List<BussinnesEntity.Order> AllOrdersByIdTable(int idTable)
-        {
-            return bl.GetAllOrdersOfSpasificTable(idTable);
+            DataContext = new OrderViewModel();
         }
     }
 }

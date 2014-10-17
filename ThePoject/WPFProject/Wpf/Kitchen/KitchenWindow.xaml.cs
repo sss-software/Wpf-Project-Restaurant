@@ -22,6 +22,7 @@ namespace Wpf
     /// </summary>
     public partial class KitchenWindow : Window
     {
+        List<Ration> NotDoneRationList=null;
         public KitchenWindow()
         {
             InitializeComponent();
@@ -37,7 +38,8 @@ namespace Wpf
 
             BussinesLogic bl = new BussinesLogic();
             List<Ration> allNotDoneRationList = bl.GetAllRations();
-            List<Ration> NotDoneRationList = bl.GetAllRations().Where(x => x.Done == false).ToList();
+            
+            NotDoneRationList = bl.GetAllRations().Where(x => x.Done == false).ToList();
             foreach (Ration item in NotDoneRationList)
             {
                 TabControl.AddTab(CreateFixedSizeLabel(item.Description, new Size(320, 240)));
@@ -75,8 +77,10 @@ namespace Wpf
             TabControl.SpinToIndex((int)TargetIndex.Value);
         }
 
-        private void DoSometing(object sender, RoutedEventArgs e)
+        private void DoneCurrent(object sender, RoutedEventArgs e)
         {
+            Ration current = NotDoneRationList.ElementAt(TabControl.GetCurrentIndex());
+            
             //Just btn for some debug check if you need
         }
     }

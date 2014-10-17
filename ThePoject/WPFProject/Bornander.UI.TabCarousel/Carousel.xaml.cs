@@ -357,6 +357,11 @@ namespace Bornander.UI.TabCarousel
             SpinToIndex(currentIndex - 1);
         }
 
+        public int GetCurrentIndex()
+        {
+            return currentIndex;
+        }
+
         private void HandleSizeChanged(object sender, SizeChangedEventArgs e)
         {
             RecalculateTransforms();

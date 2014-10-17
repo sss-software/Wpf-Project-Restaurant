@@ -19,7 +19,7 @@
 
             <bornander:Carousel Grid.Row="1" x:Name="TabControl" Background="Black" Depth="0.1"/>
             <StackPanel Grid.Row="0" Orientation="Vertical" >
-                <Button Content="Btn for Debug" Click="DoSometing"/>
+                <Button Content="Make Current Ration As Done" Click="DoneCurrent"/>
                 <StackPanel Orientation="Horizontal">
                     <Button Content="Previous" Click="HandlePrevious" />
                     <Button Content="Next" Click="HandleNext"/>

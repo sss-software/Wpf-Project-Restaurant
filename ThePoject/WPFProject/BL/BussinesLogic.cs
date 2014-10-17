@@ -17,6 +17,26 @@ namespace BL
             if (d == null)
             {
                 d = new dal();
+                /*Person p = new Person() { FirstName = "Kitchen", LastName = "Kitchen", Email = "Kitchen@Kitchen", Password = "Kitchen", PersonType = BussinnesEntity.Type.chef };
+                Person p1 = new Person() { FirstName = "Manager", LastName = "Manager", Email = "Manager@Manager", Password = "Manager", PersonType = BussinnesEntity.Type.manager };
+                Person p2 = new Person() { FirstName = "Waiter", LastName = "Waiter", Email = "Waiter@Waiter", Password = "Waiter", PersonType = BussinnesEntity.Type.waiter };
+                d.Insert(p);
+                d.Insert(p1);
+                d.Insert(p2);
+                Table t = new Table() { Plasace = 10 };
+                d.Insert(t);
+                 
+                Order o = new Order() { Sum = 100, TableId = 2, Done = true };
+                
+                Ration r1 = new Ration() { Description = "r21", Price = 10, OrderId = 2, Done = false ,CreationDate=DateTime.Now };
+                Ration r2 = new Ration() { Description = "r22", Price = 42.5, OrderId = 2, Done = true, CreationDate = DateTime.Now };
+                
+                d.Insert(r1);
+                d.Insert(r2);
+                o.RationList = new Ration[] { r1, r2 };
+                d.Insert(o);
+                 */
+
             }
         }
 
@@ -42,7 +62,15 @@ namespace BL
 
         public List<Order> GetAllOrders()
         {
-            return d.GetAllOrders();
+            //Temp exmp. moshe, you need implament the Order to return with list of ration - now is null
+            Ration r1 = new Ration() { Description = "r21", Price = 10, OrderId = 2, Done = false, CreationDate = DateTime.Now };
+            Ration r2 = new Ration() { Description = "r22", Price = 42.5, OrderId = 2, Done = true, CreationDate = DateTime.Now };
+
+            List<Order> o = d.GetAllOrders();
+            o.FirstOrDefault().RationList = new Ration[] { r1, r2 };
+            return o;
+            //
+            //return d.GetAllOrders();
         }
 
         public List<Order> GetAllOrdersOfSpasificTable(int idTable)
@@ -52,16 +80,6 @@ namespace BL
 
         public List<Ration> GetAllRations()
         {
-            /*Table t = new Table() { Plasace = 10 };
-            d.Insert(t);
-            Order o = new Order() { Sum = 50, TableId = 1, OrderDone = false };
-            d.Insert(o);
-            var y = d.GetAllTables();
-            var z = d.GetAllOrders();
-            Ration r1 = new Ration() { Description = "r1", Price = 3.5, OrderId = 1, RationDone = false };
-            Ration r2 = new Ration() { Description = "r2", Price = 4.5, OrderId = 1, RationDone = true };
-            d.Insert(r1);
-            d.Insert(r2);*/
             return d.GetAllRations();
         }
 
