@@ -14,7 +14,7 @@ namespace BussinnesEntity
         public bool Done { get; set; }
         public int OrderId { get; set; }
         public DateTime CreationDate { get; set; }
-        //public virtual Order Order { get; set; }
+        public virtual Order Order { get; set; }
 
     }
 }

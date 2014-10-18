@@ -11,9 +11,14 @@ namespace BussinnesEntity
         public int OrderID { get; set; }
         public double Sum { get; set; }
         public bool Done { get; set; }
-        public IEnumerable<Ration> RationList { get; set; }
+        public virtual List<Ration> RationList { get; set; }
         public int TableId { get; set; }
         public virtual Table Table { get; set; }
         public string Notes { get; set; }
+
+        public Order()
+        {
+            RationList = new List<Ration>();
+        }
     }
 }

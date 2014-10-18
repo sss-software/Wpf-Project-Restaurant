@@ -26,10 +26,23 @@ namespace ProjectContext
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
+           
             modelBuilder.Entity<Table>().HasKey(t => new { t.TableId });
             modelBuilder.Entity<Order>().HasKey(o => new { o.OrderID });
             modelBuilder.Entity<Person>().HasKey(p => new { p.PersonId });
-            modelBuilder.Entity<Ration>().HasKey(r => new { r.RationId });
+            modelBuilder.Entity<Ration>().HasKey(r => new { r.RationId }); 
+            modelBuilder.Entity<Order>().
+                     HasMany(o => o.RationList).
+                     WithRequired(r => r.Order).
+                     HasForeignKey(r => r.OrderId).
+                     WillCascadeOnDelete();
+            modelBuilder.Entity<Table>().
+                    HasMany(t => t.OrderList).
+                    WithRequired(o => o.Table).
+                    HasForeignKey(o => o.TableId).
+                    WillCascadeOnDelete();
+
         }
     }
 }

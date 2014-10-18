@@ -89,6 +89,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Waiter\CommandTrigger.cs" />
+    <Compile Include="Waiter\DeleteRationCommand.cs" />
     <Compile Include="Waiter\OrderViewModel.cs" />
     <Compile Include="Waiter\DeleteCommand.cs" />
     <Compile Include="Waiter\DetailView.xaml.cs">

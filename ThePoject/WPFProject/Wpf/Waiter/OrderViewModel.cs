@@ -16,7 +16,8 @@ namespace Wpf.Waiter
             //List<Order> orders = bl.GetAllOrders();
             Orders = new ObservableCollection<Order>();
             _PopulateOrders(bl.GetAllOrders().AsQueryable());
-            
+
+
             Delete = new DeleteCommand( 
                 ()=>CanDelete,
                 order =>
@@ -24,6 +25,14 @@ namespace Wpf.Waiter
                         CurrentOrder = null;
                         _PopulateOrders(bl.GetAllOrders().AsQueryable());
                     });
+
+            DeleteRation = new DeleteRationCommand(
+                () => CanDelete,
+                (order,ration) =>
+                {
+                    CurrentOrder = null;
+                    _PopulateOrders(bl.GetAllOrders().AsQueryable());
+                });
         }
 
         private void _PopulateOrders(IEnumerable<Order> orders)
@@ -39,9 +48,29 @@ namespace Wpf.Waiter
             get { return _currentOrder != null; }
         }
 
+        public bool CanDeleteRation
+        {
+            get { return _currentRation != null; }
+        }
+
         public ObservableCollection<Order> Orders { get; set; }
 
         public DeleteCommand Delete { get; set; }
+        public DeleteRationCommand DeleteRation { get; set; }
+
+        private Ration _currentRation;
+
+        public Ration CurrentRation
+        {
+            get { return _currentRation; }
+            set
+            {
+                _currentRation = value;
+                RaisePropertyChanged("CurrentRation");
+                RaisePropertyChanged("CanDelete");
+                DeleteRation.RaiseCanExecuteChanged();
+            }
+        }
 
         private Order _currentOrder;
 
