@@ -25,13 +25,19 @@ namespace BL
                 //d.Insert(p1);
                 //d.Insert(p2);
                 //Table t = new Table() { Plasace = 10 };
-                //d.Insert(t);
-                 
-                //Order o = new Order() { Sum = 100, TableId = 1, Done = true };
                 
-                //Ration r1 = new Ration() { Description = "r21", Price = 10, OrderId = 1, Done = false ,CreationDate=DateTime.Now };
-                //Ration r2 = new Ration() { Description = "r22", Price = 42.5, OrderId = 1, Done = true, CreationDate = DateTime.Now };
+                //Order o = new Order() { Sum = 100, Done = true };
 
+                //Ration r1 = new Ration() { Description = "r21", Price = 10, Done = false, CreationDate = DateTime.Now };
+                //Ration r2 = new Ration() { Description = "r22", Price = 42.5, Done = true, CreationDate = DateTime.Now };
+
+                //o.Table = t;
+                //o.RationList.Add(r1);
+                //o.RationList.Add(r2);
+                
+
+                //d.Insert(o);
+                 
                 //d.Insert(o);
                 //d.Insert(r1);
                 //d.Insert(r2);
@@ -71,7 +77,7 @@ namespace BL
             List<Order> o = d.GetAllOrders();
             o.FirstOrDefault().RationList = new Ration[] { r1, r2 };
             return o;*/
-            List<Order> orders = new List<Order>();
+            /*List<Order> orders = new List<Order>();
             foreach (var order in d.GetAllOrders())
             {
                 Order o = new Order();
@@ -83,9 +89,9 @@ namespace BL
                 //o.Table = order.Table;
                 orders.Add(o);
             }
-            return orders;
+            return orders;*/
             
-            //return d.GetAllOrders();
+            return d.GetAllOrders();
         }
 
         public List<Order> GetAllOrdersOfSpasificTable(int idTable)

@@ -48,6 +48,7 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\bin\Debug\ProjectContext.pdb
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\obj\Debug\BL.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\BL\obj\Debug\BL.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\BL.dll.config
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\BL.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\BL.pdb
@@ -70,6 +71,5 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\Spring.Rest.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\Spring.Social.Core.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\Spring.Social.Core.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\bin\Debug\ProjectContext.pdb
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\obj\Debug\BL.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BL\obj\Debug\BL.pdb

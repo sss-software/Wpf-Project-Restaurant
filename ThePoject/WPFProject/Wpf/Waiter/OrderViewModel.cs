@@ -1,14 +1,21 @@
 ﻿using BL;
 using BussinnesEntity;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
 
 namespace Wpf.Waiter
 {
     public class OrderViewModel : BaseINPC
     {
         public BussinesLogic bl { get; set; }
+
+        public ICommand DeleteRationCmd{ get; private set; }
+        public ICommand AddRationCmd { get; private set; }
+        public ICommand AddOrderCmd { get; private set; }
+
         public OrderViewModel()
         {
             bl = new BussinesLogic();
@@ -26,13 +33,37 @@ namespace Wpf.Waiter
                         _PopulateOrders(bl.GetAllOrders().AsQueryable());
                     });
 
-            DeleteRation = new DeleteRationCommand(
-                () => CanDelete,
-                (order,ration) =>
+            DeleteRationCmd = new DelegateCommand(
+                ration => CanDelete,
+                ration =>
                 {
-                    CurrentOrder = null;
+                    CurrentOrder.RationList.Remove(CurrentRation);
+                    //bl.Delete(CurrentRation);
+                    bl.Update(CurrentOrder);
+                    CurrentRation = null;
                     _PopulateOrders(bl.GetAllOrders().AsQueryable());
                 });
+
+            AddOrderCmd = new DelegateCommand(
+                ration =>
+                {
+                    //CurrentOrder.RationList.Add(new Ration());
+                    //bl.Delete(CurrentRation);
+                    //bl.Update(CurrentOrder);
+                    Order newOrder = new Order() { TableId=1};
+                    bl.Insert(newOrder);
+                    CurrentOrder = newOrder;
+                    _PopulateOrders(bl.GetAllOrders().AsQueryable());
+                });
+
+            AddRationCmd = new DelegateCommand(
+                ration =>
+                {
+                    CurrentOrder.RationList.Add(new Ration() { CreationDate = DateTime.Now });
+                    //bl.Delete(CurrentRation);
+                    bl.Update(CurrentOrder);
+                    _PopulateOrders(bl.GetAllOrders().AsQueryable());
+                }); 
         }
 
         private void _PopulateOrders(IEnumerable<Order> orders)
@@ -68,7 +99,7 @@ namespace Wpf.Waiter
                 _currentRation = value;
                 RaisePropertyChanged("CurrentRation");
                 RaisePropertyChanged("CanDelete");
-                DeleteRation.RaiseCanExecuteChanged();
+                //DeleteRation.RaiseCanExecuteChanged();
             }
         }
 
@@ -79,6 +110,7 @@ namespace Wpf.Waiter
             get { return _currentOrder; }
             set
             {
+                bl.Update(_currentOrder);
                 _currentOrder = value;
                 RaisePropertyChanged("CurrentOrder");
                 RaisePropertyChanged("CanDelete");

@@ -78,18 +78,9 @@
     <Compile Include="Manager\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Manager\TableBackPanel.xaml.cs">
-      <DependentUpon>TableBackPanel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Manager\TableFrontPanel.xaml.cs">
-      <DependentUpon>TableFrontPanel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Manager\TableView.xaml.cs">
-      <DependentUpon>TableView.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Waiter\CommandTrigger.cs" />
     <Compile Include="Waiter\DeleteRationCommand.cs" />
+    <Compile Include="Waiter\OrderModel.cs" />
     <Compile Include="Waiter\OrderViewModel.cs" />
     <Compile Include="Waiter\DeleteCommand.cs" />
     <Compile Include="Waiter\DetailView.xaml.cs">
@@ -147,22 +138,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Manager\oldManagerWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Manager\TableBackPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Manager\TableFrontPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Manager\TableView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Waiter\DetailView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -177,9 +152,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manager\oldManagerWindow.xaml.cs">
-      <DependentUpon>oldManagerWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
