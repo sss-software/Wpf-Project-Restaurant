@@ -38,7 +38,7 @@ namespace Wpf.Waiter
                 ration =>
                 {
                     CurrentOrder.RationList.Remove(CurrentRation);
-                    //bl.Delete(CurrentRation);
+                    bl.Delete(CurrentRation);
                     bl.Update(CurrentOrder);
                     CurrentRation = null;
                     _PopulateOrders(bl.GetAllOrders().AsQueryable());
@@ -96,9 +96,11 @@ namespace Wpf.Waiter
             get { return _currentRation; }
             set
             {
+                bl.Update(_currentRation);
                 _currentRation = value;
                 RaisePropertyChanged("CurrentRation");
                 RaisePropertyChanged("CanDelete");
+                RaisePropertyChanged("IsOrderDone");
                 //DeleteRation.RaiseCanExecuteChanged();
             }
         }
@@ -114,7 +116,29 @@ namespace Wpf.Waiter
                 _currentOrder = value;
                 RaisePropertyChanged("CurrentOrder");
                 RaisePropertyChanged("CanDelete");
+                RaisePropertyChanged("IsOrderDone");
                 Delete.RaiseCanExecuteChanged();
+            }
+        }
+
+        public bool IsOrderDone 
+        {
+            get {
+                bool isDone = true;
+                if (CurrentOrder != null)
+                {
+                    foreach (Ration r in CurrentOrder.RationList)
+                    {
+                        isDone = isDone && r.Done;
+                    }
+                }
+                return isDone; 
+            }
+            set {
+                foreach (Ration r in  CurrentOrder.RationList)
+                {
+                    r.Done = value;
+                }
             }
         }
     }

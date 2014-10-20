@@ -17,7 +17,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <bornander:Carousel Grid.Row="1" x:Name="TabControl" Background="Black" Depth="0.1"/>
+            <!--<bornander:Carousel Grid.Row="1" x:Name="TabControl" Background="Black" Depth="0.1"/>-->
             <StackPanel Grid.Row="0" Orientation="Vertical" >
                 <Button Content="Make Current Ration As Done" Click="DoneCurrent"/>
                 <StackPanel Orientation="Horizontal">

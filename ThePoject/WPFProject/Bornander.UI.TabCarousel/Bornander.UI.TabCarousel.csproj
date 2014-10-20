@@ -96,12 +96,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bornander.Wpf.Meshes\Bornander.Wpf.Meshes.csproj">
-      <Project>{8C728DB1-9F0C-4CDF-B062-83CF42FF0242}</Project>
-      <Name>Bornander.Wpf.Meshes</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>

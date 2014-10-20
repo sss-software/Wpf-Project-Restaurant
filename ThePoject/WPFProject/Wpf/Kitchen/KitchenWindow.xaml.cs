@@ -26,15 +26,7 @@ namespace Wpf
         public KitchenWindow()
         {
             InitializeComponent();
-            DataContext = TabControl;
-
-            //Need to Put here the list of the ration that didn't done yet.
-            //List<Ration> NotDoneRationList = new List<Ration>();
-            //NotDoneRationList.Add(new Ration { RationId = 0, Price = 10 , Description="One", Done=false});
-            //NotDoneRationList.Add(new Ration { RationId = 1, Price = 20, Description = "Two", Done = false });
-            //NotDoneRationList.Add(new Ration { RationId = 2, Price = 30, Description = "Three", Done = false });
-            //NotDoneRationList.Add(new Ration { RationId = 3, Price = 40, Description = "Four", Done = false });
-
+            /*DataContext = TabControl;
 
             BussinesLogic bl = new BussinesLogic();
             List<Ration> allNotDoneRationList = bl.GetAllRations();
@@ -49,6 +41,7 @@ namespace Wpf
             TabControl.NumberOfTabs = NotDoneRationList != null ? NotDoneRationList.Count : 0;
 
             TabControl.AnimationDuration = 2000;
+              */
         }
 
         private static FrameworkElement CreateFixedSizeLabel(string text, Size size)
@@ -80,8 +73,8 @@ namespace Wpf
         private void DoneCurrent(object sender, RoutedEventArgs e)
         {
             Ration current = NotDoneRationList.ElementAt(TabControl.GetCurrentIndex());
+            current.Done = true;
             
-            //Just btn for some debug check if you need
         }
     }
 }

@@ -89,6 +89,9 @@
     <Compile Include="Waiter\ListView.xaml.cs">
       <DependentUpon>ListView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Waiter\RationDetailView.xaml.cs">
+      <DependentUpon>RationDetailView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Waiter\WaiterWindow.xaml.cs">
       <DependentUpon>WaiterWindow.xaml</DependentUpon>
     </Compile>
@@ -145,6 +148,10 @@
     <Page Include="Waiter\ListView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Waiter\RationDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Waiter\WaiterWindow.xaml">
       <SubType>Designer</SubType>

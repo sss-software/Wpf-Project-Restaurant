@@ -1,0 +1,114 @@
+﻿<Window x:Class="CarouselWPFTestApp.CustomiseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Carousel Customisation Window" 
+        Width="367.164"
+        Height="395" 
+        WindowStartupLocation="Manual"
+        Left="810"
+        Top="200"
+        WindowStyle="ToolWindow">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Height="80" Grid.Row="0"
+              HorizontalAlignment="Stretch"
+              DockPanel.Dock="Top"
+              Background="LightSteelBlue">
+
+        </Grid>
+        <Canvas Background="Black" Grid.Row="1">
+
+            <Label Content="Filter The Carousel" Height="41.5" Foreground="Black" FontFamily="Tahoma" FontWeight="Bold" FontSize="21.333" Canvas.Left="141" Canvas.Top="-53" Width="289">
+                <Label.Effect>
+                    <DropShadowEffect ShadowDepth="0" Color="White" Direction="0" BlurRadius="15"/>
+                </Label.Effect>
+            </Label>
+
+
+            <Label Content="Filter By Table" HorizontalAlignment="Left" Height="28.5" Width="242" Foreground="White" FontFamily="Tahoma" Canvas.Left="15" Canvas.Top="63"/>
+            <ComboBox x:Name="cmbTable" Height="25"
+                SelectionChanged="CmbTable_SelectionChanged"      
+        		ItemContainerStyle="{DynamicResource RegularComboBox}"
+        		Background="White"
+        		Style="{DynamicResource comboStyle}"
+        		ToolTip="Choose the type of path to use" Width="321" HorizontalAlignment="Left" Canvas.Left="15" Canvas.Top="85"
+                SelectedValuePath="Key" DisplayMemberPath="Value">
+                <!--ItemsSource="{Binding tables}" SelectedValuePath="Key" DisplayMemberPath="Value"-->
+                
+            </ComboBox>
+
+
+            <Label Content="Filter By Item" HorizontalAlignment="Left" Height="28.5" Width="242" Foreground="White" FontFamily="Tahoma" Canvas.Left="15" Canvas.Top="126"/>
+            <ComboBox x:Name="cmbNavigationButtonLocation" Height="25"
+                SelectionChanged="CmbNavigationButtonLocation_SelectionChanged"      
+        		ItemContainerStyle="{DynamicResource RegularComboBox}"
+        		Background="White"
+        		Style="{DynamicResource comboStyle}"
+        		ToolTip="Choose the navigation button location to use" HorizontalAlignment="Left" Width="321" Canvas.Left="15" Canvas.Top="149">
+                <ComboBoxItem Tag="TopLeft">
+                    <Label Content="TopLeft"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="TopCenter">
+                    <Label Content="TopCenter"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="TopRight">
+                    <Label Content="TopRight"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="LeftCenter">
+                    <Label Content="LeftCenter"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="RightCenter">
+                    <Label Content="RightCenter"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="BottomLeft">
+                    <Label Content="BottomLeft"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="BottomCenter" IsSelected="True">
+                    <Label Content="BottomCenter"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+                <ComboBoxItem Tag="BottomRight">
+                    <Label Content="BottomRight"
+        				VerticalAlignment="Center"
+        				VerticalContentAlignment="Center" />
+                </ComboBoxItem>
+
+
+
+            </ComboBox>
+
+        </Canvas>
+
+        <Image Grid.Row="0" Source="Images/option1.png" Margin="8,8,0,-43" d:LayoutOverrides="GridBox" HorizontalAlignment="Left" Width="133" >
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="Black" BlurRadius="10" />
+            </Image.Effect>
+        </Image>
+
+    </Grid>
+</Window>
+
+
+

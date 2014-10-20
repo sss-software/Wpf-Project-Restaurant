@@ -1,14 +1,17 @@
 ﻿<Window x:Class="Wpf.Waiter.WaiterWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="WaiterWindow" Height="300" Width="300"
+        Title="WaiterWindow" Height="400" Width="400"
         xmlns:local="clr-namespace:Wpf.Waiter">
     <Grid x:Name="LayoutRoot" Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.4*"/>
-            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.7*"/>
         </Grid.ColumnDefinitions>
         <local:ListView/>
-        <local:DetailView Grid.Column="1"/>
+        <StackPanel Grid.Column="1">
+            <local:DetailView />
+            <local:RationDetailView />
+        </StackPanel>
     </Grid>
 </Window>

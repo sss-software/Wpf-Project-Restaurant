@@ -1,0 +1,44 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:Carousel="clr-namespace:Carousel;assembly=Carousel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d"
+	x:Class="CarouselWPFTestApp.MainWindow"
+	x:Name="Window"
+	Title="Versatile Fully Customisable Carousel"
+    WindowStyle="ToolWindow"
+    WindowStartupLocation="Manual"
+    Left="0"
+    Top="0"
+    Background="Black"
+	Width="800" Height="600">
+
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="LightSteelBlue">
+            <Label Content="Selected Item:" HorizontalAlignment="Left" Margin="0" Width="202" FontFamily="Impact" 
+                   FontSize="32" VerticalAlignment="Center"/>
+            <Label x:Name="lblSelectedItem" Content="Selected Item:" Margin="195,0,0,0" FontFamily="Impact" FontSize="32" VerticalAlignment="Center" Foreground="#FFFF3204"/>
+        </Grid>        
+        
+        <Grid Grid.Row="1">
+            
+            <Path x:Name="customPath" Data="M12,547.5 C42.162511,513.31582 74.461354,485.03865 106.5,453 117.17341,442.32659 129.77214,429.27576 150,436.5 166.37237,442.34727 170.32063,462.41031 184.5,469.5 224.8932,489.6966 226.86622,477 271.5,477 304.40934,477 336.48849,480 369,480 411.59476,480 419.75466,476.8472 454.5,456 506.6265,424.7241 532.15114,394.58143 565.5,339 596.94589,286.59019 619.12867,226.14821&#xd;&#xa;654,172.5 673.22938,142.91634 694.17477,98.595136 726,79.5 742.4182,69.649083 753.24869,63 774,63 799.01663,63 788.81699,55.759153 808.5,84" Margin="12,62.168,-25.5,18.5" Stretch="Fill" Stroke="Transparent"/>
+            <Carousel:CarouselControl x:Name="CarouselControl" 
+                                    CustomPathElement="{Binding ElementName=customPath}"
+                                    SelectionChanged="SelectionChanged"/>
+        </Grid>
+
+
+    </Grid>
+
+
+</Window>
