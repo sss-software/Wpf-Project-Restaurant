@@ -23,7 +23,7 @@ namespace Wpf.Manager
         public ManagerWindow()
         {
             InitializeComponent();
-            DataContext = new OrderViewModel();
+            DataContext = new TableViewModel();
         }
     }
 }

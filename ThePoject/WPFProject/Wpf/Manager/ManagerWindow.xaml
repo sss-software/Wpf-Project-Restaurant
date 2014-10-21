@@ -2,29 +2,21 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:s="clr-namespace:System;assembly=mscorlib"
-        Title="ManagerWindow" Height="300" Width="300">
+        Title="ManagerWindow" Height="684" Width="903">
     <Window.Resources>
         <DataTemplate x:Key="frontTemplate">
-            <GroupBox Header="Front" Background="White">
                 <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0.6*"/>
-                        <RowDefinition Height="0.2*"/>
-                        <RowDefinition Height="0.2*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Text="OrderID:" HorizontalAlignment="Left" Margin="5" FontSize="30" Foreground="Green" />
-                    <TextBlock Text="{Binding OrderID}" HorizontalAlignment="Left" Margin="5" Grid.Column="1" FontSize="30" Foreground="Green" />
-                    <TextBlock Text="Sum:" HorizontalAlignment="Left" Margin="5" Grid.Row="1"/>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="..\Images\table.png"/>
+                    </Grid.Background>
+
+                    <TextBlock Text="{Binding TableId}" HorizontalAlignment="Center" FontSize="30" Foreground="Green" VerticalAlignment="Center" />
+                    <!--<TextBlock Text="Sum:" HorizontalAlignment="Left" Margin="5" Grid.Row="1"/>
                     <TextBlock Text="{Binding Sum}" HorizontalAlignment="Left" Margin="5" Grid.Row="1" Grid.Column="1"/>
                     <TextBlock Text="OrderID:" HorizontalAlignment="Left" Margin="5" Grid.Row="2"/>
-                    <TextBlock Text="{Binding OrderID}" HorizontalAlignment="Left" Margin="5" Grid.Row="2" Grid.Column="1"/>
+                    <TextBlock Text="{Binding OrderID}" HorizontalAlignment="Left" Margin="5" Grid.Row="2" Grid.Column="1"/>-->
 
                 </Grid>
-            </GroupBox>
         </DataTemplate>
         <DataTemplate x:Key="backTemplate">
             <GroupBox Header="Back" Background="White">
@@ -32,7 +24,7 @@
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="{Binding Description}" VerticalAlignment="Bottom"/>
+                                <Label Content="{Binding Type}" VerticalAlignment="Bottom"/>
                                 <Label Content="{Binding CreationDate}" VerticalAlignment="Bottom"/>
                                 <CheckBox IsChecked="{Binding Done}" IsEnabled="False" VerticalAlignment="Center"/>
                             </StackPanel>
@@ -45,7 +37,7 @@
         <DataTemplate x:Key="flipItemTemplate">
 
             <!-- Note: Camera setup only works when this is square. -->
-            <Grid Width="200" Height="200">
+            <Grid Width="100" Height="100" x:Name="FlipMasterGrid">
 
                 <!-- Provides 3D rotation transition. Hidden except for when animation is
        active. -->
@@ -175,6 +167,14 @@
                            Storyboard.TargetName="backWrapper"
                            Storyboard.TargetProperty="Opacity" />
 
+                                        <DoubleAnimation BeginTime="0:0:1.05" Duration="0:0:0.05" To="400"
+                           Storyboard.TargetName="FlipMasterGrid"
+                           Storyboard.TargetProperty="Width" />
+                                        <DoubleAnimation BeginTime="0:0:1.05" Duration="0:0:0.05" To="310"
+                           Storyboard.TargetName="FlipMasterGrid"
+                           Storyboard.TargetProperty="Height" />
+                                      
+
                                         <!-- 3D animation. Move the camera out slightly as we spin, so the model fits entirely
                  within the field of view. Rotate the model 180 degrees. -->
                                         <Point3DAnimation To="0,0,1.1" From="0,0,0.5"
@@ -215,6 +215,8 @@
                            Storyboard.TargetProperty="Visibility">
                                             <DiscreteObjectKeyFrame KeyTime="0:0:0.05" Value="{x:Static Visibility.Hidden}" />
                                         </ObjectAnimationUsingKeyFrames>
+                                        
+                                        
 
                                         <DoubleAnimation To="0" Duration="0:0:0.05"
                            Storyboard.TargetName="backWrapper"
@@ -222,6 +224,13 @@
                                         <DoubleAnimation BeginTime="0:0:1.05" Duration="0:0:0.05"
                            Storyboard.TargetName="frontWrapper"
                            Storyboard.TargetProperty="Opacity" />
+
+                                        <DoubleAnimation BeginTime="0:0:1.05" Duration="0:0:0.05" To="100"
+                           Storyboard.TargetName="FlipMasterGrid"
+                           Storyboard.TargetProperty="Width" />
+                                        <DoubleAnimation BeginTime="0:0:1.05" Duration="0:0:0.05" To="100"
+                           Storyboard.TargetName="FlipMasterGrid"
+                           Storyboard.TargetProperty="Height" />
 
                                         <Point3DAnimation To="0,0,1.1" From="0,0,0.5"
                            BeginTime="0:0:0.05" Duration="0:0:0.5" AutoReverse="True" DecelerationRatio="0.3"
@@ -245,15 +254,18 @@
 
     </Window.Resources>
 
-    <ScrollViewer>
-        <ItemsControl ItemsSource="{Binding Orders}" ItemTemplate="{StaticResource flipItemTemplate}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="..\Images\topview3.jpg" Opacity="0.8"/>
+        </Grid.Background>
+        <ItemsControl ItemsSource="{Binding Tables}" ItemTemplate="{StaticResource flipItemTemplate}" Margin="228,204,241.178,142.419">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel />
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
-    </ScrollViewer>
+    </Grid>
 </Window>
 
 

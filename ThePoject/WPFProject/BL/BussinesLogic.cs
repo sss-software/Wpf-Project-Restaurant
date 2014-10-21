@@ -24,26 +24,98 @@ namespace BL
                 //d.Insert(p);
                 //d.Insert(p1);
                 //d.Insert(p2);
-                //Table t = new Table() { Plasace = 10 };
-                
-                //Order o = new Order() { Sum = 100, Done = true };
 
-                //Ration r1 = new Ration() { Description = "r21", Price = 10, Done = false, CreationDate = DateTime.Now };
-                //Ration r2 = new Ration() { Description = "r22", Price = 42.5, Done = true, CreationDate = DateTime.Now };
+                //Table t1 = new Table() { Plasace = 10, Notes = "" };
+                //Table t2 = new Table() { Plasace = 6, Notes = "VIP" };
+                //Table t3 = new Table() { Plasace = 10, Notes = "At the door" };
+                //Table t4 = new Table() { Plasace = 9, Notes = "By the window" };
+                //Table t5 = new Table() { Plasace = 8, Notes = "" };
+                //Table t6 = new Table() { Plasace = 10, Notes = "" };
+                //Table t7 = new Table() { Plasace = 6, Notes = "VIP" };
+                //Table t8 = new Table() { Plasace = 10, Notes = "At the door" };
+                //Table t9 = new Table() { Plasace = 9, Notes = "By the window" };
+                //Table t10 = new Table() { Plasace = 8, Notes = "" };
+                //Table t11 = new Table() { Plasace = 10, Notes = "" };
+                //Table t12 = new Table() { Plasace = 6, Notes = "VIP" };
+                //Table t13 = new Table() { Plasace = 10, Notes = "At the door" };
+                //Table t14 = new Table() { Plasace = 9, Notes = "By the window" };
+                //Table t15 = new Table() { Plasace = 8, Notes = "" };
+                //d.Insert(t1);
+                //d.Insert(t2);
+                //d.Insert(t3);
+                //d.Insert(t4);
+                //d.Insert(t5);
+                //d.Insert(t6);
+                //d.Insert(t7);
+                //d.Insert(t8);
+                //d.Insert(t9);
+                //d.Insert(t10);
+                //d.Insert(t11);
+                //d.Insert(t12);
+                //d.Insert(t13);
+                //d.Insert(t14);
+                //d.Insert(t15);
 
-                //o.Table = t;
-                //o.RationList.Add(r1);
-                //o.RationList.Add(r2);
-                
-
-                //d.Insert(o);
-                 
-                //d.Insert(o);
+                //Ration r1 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 1 };
+                //Ration r2 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 1 };
+                //Ration r3 = new Ration() { Type = RationType.Fish, Price = 25.8, Done = true, CreationDate = DateTime.Now, TableId = 1 };
+                //Ration r4 = new Ration() { Type = RationType.Fish, Price = 25.8, Done = true, CreationDate = DateTime.Now, TableId = 1 };
+                //Ration r5 = new Ration() { Type = RationType.Meat, Price = 42.5, Done = true, CreationDate = DateTime.Now, TableId = 1 };
+                //Ration r6 = new Ration() { Type = RationType.Salmon, Price = 34, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r7 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r8 = new Ration() { Type = RationType.Schnitzel, Price = 12, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r9 = new Ration() { Type = RationType.Salmon, Price = 34, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r10 = new Ration() { Type = RationType.IceCream, Price = 5, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r11 = new Ration() { Type = RationType.Meat, Price = 42.5, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r12 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r13 = new Ration() { Type = RationType.Meat, Price = 42.5, Done = true, CreationDate = DateTime.Now, TableId = 2 };
+                //Ration r14 = new Ration() { Type = RationType.Fish, Price = 25.8, Done = true, CreationDate = DateTime.Now, TableId = 3 };
+                //Ration r15 = new Ration() { Type = RationType.Meat, Price = 42.5, Done = true, CreationDate = DateTime.Now, TableId = 3 };
+                //Ration r16 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 3 };
+                //Ration r17 = new Ration() { Type = RationType.IceCream, Price = 5, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r18 = new Ration() { Type = RationType.Fish, Price = 25.8, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r19 = new Ration() { Type = RationType.IceCream, Price = 5, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r20 = new Ration() { Type = RationType.Meat, Price = 42.5, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r21 = new Ration() { Type = RationType.Meat, Price = 42.5, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r22 = new Ration() { Type = RationType.Salmon, Price = 34, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r23 = new Ration() { Type = RationType.Salmon, Price = 34, Done = true, CreationDate = DateTime.Now, TableId = 4 };
+                //Ration r24 = new Ration() { Type = RationType.Schnitzel, Price = 12, Done = true, CreationDate = DateTime.Now, TableId = 5 };
+                //Ration r25 = new Ration() { Type = RationType.Schnitzel, Price = 12, Done = true, CreationDate = DateTime.Now, TableId = 5 };
+                //Ration r26 = new Ration() { Type = RationType.IceCream, Price = 5, Done = true, CreationDate = DateTime.Now, TableId = 5 };
+                //Ration r27 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 5 };
+                //Ration r28 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 5 };
+                //Ration r29 = new Ration() { Type = RationType.Fish, Price = 25.8, Done = true, CreationDate = DateTime.Now, TableId = 5 };
+                //Ration r30 = new Ration() { Type = RationType.Chicken, Price = 10, Done = true, CreationDate = DateTime.Now, TableId = 5 };
                 //d.Insert(r1);
                 //d.Insert(r2);
-                //o.RationList = new Ration { r1, r2 };
-                
-                 
+                //d.Insert(r3);
+                //d.Insert(r4);
+                //d.Insert(r5);
+                //d.Insert(r6);
+                //d.Insert(r7);
+                //d.Insert(r8);
+                //d.Insert(r9);
+                //d.Insert(r10);
+                //d.Insert(r11);
+                //d.Insert(r12);
+                //d.Insert(r13);
+                //d.Insert(r14);
+                //d.Insert(r15);
+                //d.Insert(r16);
+                //d.Insert(r17);
+                //d.Insert(r18);
+                //d.Insert(r19);
+                //d.Insert(r20);
+                //d.Insert(r21);
+                //d.Insert(r22);
+                //d.Insert(r23);
+                //d.Insert(r24);
+                //d.Insert(r25);
+                //d.Insert(r26);
+                //d.Insert(r27);
+                //d.Insert(r28);
+                //d.Insert(r29);
+                //d.Insert(r30);
 
             }
         }
@@ -68,45 +140,14 @@ namespace BL
             d.Update(obj);
         }
 
-        public List<Order> GetAllOrders()
-        {
-            //Temp exmp. moshe, you need implament the Order to return with list of ration - now is null
-            /*Ration r1 = new Ration() { Description = "r21", Price = 10, OrderId = 2, Done = false, CreationDate = DateTime.Now };
-            Ration r2 = new Ration() { Description = "r22", Price = 42.5, OrderId = 2, Done = true, CreationDate = DateTime.Now };
-
-            List<Order> o = d.GetAllOrders();
-            o.FirstOrDefault().RationList = new Ration[] { r1, r2 };
-            return o;*/
-            /*List<Order> orders = new List<Order>();
-            foreach (var order in d.GetAllOrders())
-            {
-                Order o = new Order();
-                o.OrderID = order.OrderID;
-                o.RationList = d.GetAllRationsOfSpasificOrder(order.OrderID);
-                o.Sum = order.Sum;
-                o.Done = order.Done;
-                o.TableId = order.TableId;
-                //o.Table = order.Table;
-                orders.Add(o);
-            }
-            return orders;*/
-            
-            return d.GetAllOrders();
-        }
-
-        public List<Order> GetAllOrdersOfSpasificTable(int idTable)
-        {
-            return d.GetAllOrdersOfSpasificTable(idTable);
-        }
-
         public List<Ration> GetAllRations()
         {
-            return d.GetAllRations();
+            return d.GetAllRations().Where(x => x.Done == false).ToList();
         }
 
-        public List<Ration> GetAllRationsOfSpasificOrder(int idOrder)
+        public List<Ration> GetAllRationsOfSpasificTable(int idTable)
         {
-            return d.GetAllRationsOfSpasificOrder(idOrder);
+            return d.GetAllRationsOfSpasificTable(idTable);
         }
 
         public List<Table> GetAllTables()
@@ -117,7 +158,7 @@ namespace BL
                 Table t = new Table();
                 t.TableId = table.TableId;
                 t.Plasace = table.Plasace;
-                t.OrderList = d.GetAllOrdersOfSpasificTable(table.TableId);
+                t.RationList = d.GetAllRationsOfSpasificTable(table.TableId);
                 tables.Add(t);
             }
             return tables;

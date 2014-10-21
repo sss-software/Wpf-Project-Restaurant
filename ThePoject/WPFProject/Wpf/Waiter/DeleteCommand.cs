@@ -9,9 +9,9 @@ namespace Wpf.Waiter
     public class DeleteCommand : ICommand 
     {
         private readonly Func<bool> _canExecute;
-        private readonly Action<Order> _deleted;
+        private readonly Action<Table> _deleted;
 
-        public DeleteCommand(Func<bool> canExecute, Action<Order> deleted)
+        public DeleteCommand(Func<bool> canExecute, Action<Table> deleted)
         {
             _canExecute = canExecute;
             _deleted = deleted;
@@ -26,19 +26,19 @@ namespace Wpf.Waiter
         {
             if (CanExecute(parameter))
             {
-                var order = parameter as Order;
-                if (order != null)
+                var table = parameter as Table;
+                if (table != null)
                 {
-                    var result = MessageBox.Show("Are you sure you wish to delete the order?",
+                    var result = MessageBox.Show("Are you sure you wish to delete the Table?",
                                                               "Confirm Delete", MessageBoxButton.OKCancel);
 
                     if (result.Equals(MessageBoxResult.OK))
                     {
                         BussinesLogic bl = new BussinesLogic();
-                        bl.Delete(order); 
+                        bl.Delete(table); 
                         if (_deleted != null)
                         {
-                            _deleted(order);
+                            _deleted(table);
                         }
                     }
                 }

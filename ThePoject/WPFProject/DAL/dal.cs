@@ -71,21 +71,6 @@ namespace DAL
                     }
                 }
 
-                if (obj is Order)
-                {
-                    try
-                    {
-                        Open();
-                        Order o = (Order)obj;
-                        db.Orders.Add(o);
-                        db.SaveChanges();
-                    }
-                    finally
-                    {
-                        Close();
-                    }
-                }
-
                 if (obj is Table)
                 {
                     try
@@ -120,14 +105,6 @@ namespace DAL
                     Ration r = (Ration)obj;
                     var ration = db.Rations.FirstOrDefault(x => x.RationId == r.RationId);
                     db.Rations.Remove(ration);
-                    db.SaveChanges();
-                }
-
-                if (obj is Order)
-                {
-                    Order o = (Order)obj;
-                    var order = db.Orders.FirstOrDefault(x => x.OrderID == o.OrderID);
-                    db.Orders.Remove(order);
                     db.SaveChanges();
                 }
 
@@ -169,79 +146,13 @@ namespace DAL
                     {
                         ration.RationId = r.RationId;
                         ration.Price = r.Price;
-                        ration.Description = r.Description;
+                        ration.Type = r.Type;
                         ration.Done = r.Done;
-                        ration.OrderId = r.OrderId;
-                        //ration.Order = r.Order;
+                        ration.TableId = r.TableId;
+                        //if(r.Table != null)
+                        //    Update(r.Table);
                         db.SaveChanges();
                     }
-                }
-
-                if (obj is Order)
-                {
-                    /*Order o = (Order)obj;
-                    var order = db.Orders.FirstOrDefault(x => x.OrderID == o.OrderID);
-                    if (order != null)
-                    {
-                        order.OrderID = o.OrderID;
-                        order.RationList = o.RationList;
-                        order.Sum = o.Sum;
-                        order.TableId = o.TableId;
-                        order.Table = o.Table;
-                        order.Notes = o.Notes;
-                        db.SaveChanges();
-                    }*/
-                    if (obj is Order)
-                    {
-                        Order o = (Order)obj;
-                        /*var order = db.Orders.FirstOrDefault(x => x.OrderID == o.OrderID);
-                        
-                       if (order != null)
-                       {
-                          var parentEntry = db.Entry(order);
-                           parentEntry.CurrentValues.SetValues(o);
-
-                           foreach (var childItem in o.RationList)
-                           {
-                               var originalChildItem = order.RationList
-                                   .Where(c => c.OrderId == childItem.OrderId && c.OrderId != 0)
-                                   .SingleOrDefault();
-                               // Is original child item with same ID in DB?
-                               if (originalChildItem != null)
-                               {
-                                   // Yes -> Update scalar properties of child item
-                                   var childEntry = db.Entry(originalChildItem);
-                                   childEntry.CurrentValues.SetValues(childItem);
-                               }
-                               else
-                               {
-                                   // No -> It's a new child item -> Insert
-                                   childItem.OrderId = 0;
-                                   order.RationList.Add(childItem);
-                               }
-                           }
-
-                           // Don't consider the child items we have just added above.
-                           // (We need to make a copy of the list by using .ToList() because
-                           // _dbContext.ChildItems.Remove in this loop does not only delete
-                           // from the context but also from the child collection. Without making
-                           // the copy we would modify the collection we are just interating
-                           // through - which is forbidden and would lead to an exception.)
-                           foreach (var originalChildItem in
-                                        order.RationList.Where(c => c.OrderId != 0).ToList())
-                           {
-                               // Are there child items in the DB which are NOT in the
-                               // new child item collection anymore?
-                               if (!o.RationList.Any(c => c.OrderId == originalChildItem.OrderId))
-                                   // Yes -> It's a deleted child item -> Delete
-                                   db.Rations.Remove(originalChildItem);
-                           }
-
-                           db.SaveChanges();
-                       }*/
-                        db.SaveChanges();
-                    }
-                    
                 }
 
                 if (obj is Table)
@@ -252,6 +163,11 @@ namespace DAL
                     {
                         table.TableId = t.TableId;
                         table.Plasace = t.Plasace;
+                        table.Notes = t.Notes;
+                        foreach (var ration in t.RationList)
+                        {
+                            Update(ration);
+                        }
                         db.SaveChanges();
                     }
                 }
@@ -266,22 +182,6 @@ namespace DAL
             }
         }
 
-        public List<Order> GetAllOrders()
-        {
-            using (var db = new projectContext(conn.ConnectionString))
-            {
-                return db.Orders.Include("RationList").Include("Table").ToList();
-            }
-        }
-
-        public List<Order> GetAllOrdersOfSpasificTable(int idTable)
-        {
-            using (var db = new projectContext(conn.ConnectionString))
-            {
-                return db.Orders.Include("RationList").Include("Table").Where(x => x.TableId == idTable).ToList();
-            }
-        }
-
         public List<Ration> GetAllRations()
         {
             using (var db = new projectContext(conn.ConnectionString))
@@ -290,11 +190,11 @@ namespace DAL
             }
         }
 
-        public List<Ration> GetAllRationsOfSpasificOrder(int idOrder)
+        public List<Ration> GetAllRationsOfSpasificTable(int idTable)
         {
             using (var db = new projectContext(conn.ConnectionString))
             {
-                return db.Rations.Where(x => x.OrderId == idOrder).ToList();
+                return db.Rations.Where(x => x.TableId == idTable).ToList();
             }
         }
 

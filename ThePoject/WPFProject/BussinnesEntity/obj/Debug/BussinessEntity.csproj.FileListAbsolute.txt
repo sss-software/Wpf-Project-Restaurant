@@ -14,6 +14,5 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\bin\Debug\Spr
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\bin\Debug\Spring.Rest.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\bin\Debug\Spring.Social.Core.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\bin\Debug\Spring.Social.Core.xml
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\obj\Debug\BussinessEntity.csprojResolveAssemblyReference.cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\obj\Debug\BussinnesEntity.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\BussinnesEntity\obj\Debug\BussinnesEntity.pdb

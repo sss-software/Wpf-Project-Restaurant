@@ -75,13 +75,18 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BaseINPC.cs" />
+    <Compile Include="Kitchen\CustomiseWindow.xaml.cs">
+      <DependentUpon>CustomiseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\KitchenViewModel.cs" />
+    <Compile Include="Kitchen\OrderLineData.cs" />
     <Compile Include="Manager\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Waiter\CommandTrigger.cs" />
     <Compile Include="Waiter\DeleteRationCommand.cs" />
     <Compile Include="Waiter\OrderModel.cs" />
-    <Compile Include="Waiter\OrderViewModel.cs" />
+    <Compile Include="Waiter\TableViewModel.cs" />
     <Compile Include="Waiter\DeleteCommand.cs" />
     <Compile Include="Waiter\DetailView.xaml.cs">
       <DependentUpon>DetailView.xaml</DependentUpon>
@@ -95,6 +100,10 @@
     <Compile Include="Waiter\WaiterWindow.xaml.cs">
       <DependentUpon>WaiterWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Kitchen\CustomiseWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Login\ErrorPanel.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -138,6 +147,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Manager\ManagerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\AppStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,10 +207,6 @@
       <Project>{4aacde86-0dd0-4bd4-a593-a1a6201133c9}</Project>
       <Name>BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Bornander.UI.TabCarousel\Bornander.UI.TabCarousel.csproj">
-      <Project>{126ce79b-f551-4ee2-8f92-ca4b145e1af7}</Project>
-      <Name>Bornander.UI.TabCarousel</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Bornander.UI\UI.FliperView.csproj">
       <Project>{343cfda3-dc75-4331-bc4c-3aa1a06db495}</Project>
       <Name>UI.FliperView</Name>
@@ -206,6 +215,16 @@
       <Project>{af25cf7d-f0eb-4ead-a1b0-bbd8d5e65bcc}</Project>
       <Name>BussinessEntity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Carousel\Carousel.csproj">
+      <Project>{c47cfe7b-7e54-487e-a5c0-ebafb4a9fb89}</Project>
+      <Name>Carousel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\topview3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\table.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

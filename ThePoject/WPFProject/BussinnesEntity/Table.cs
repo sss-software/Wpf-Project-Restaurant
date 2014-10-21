@@ -10,11 +10,12 @@ namespace BussinnesEntity
     {
         public int TableId { get; set; }
         public int Plasace { get; set; }
-        public virtual List<Order> OrderList { get; set; }
+        public virtual List<Ration> RationList { get; set; }
+        public string Notes { get; set; }
 
         public Table()
         {
-            OrderList = new List<Order>();
+            RationList = new List<Ration>();
         }
     }
 }

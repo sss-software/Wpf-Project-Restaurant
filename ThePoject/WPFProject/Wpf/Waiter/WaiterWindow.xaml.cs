@@ -24,7 +24,7 @@ namespace Wpf.Waiter
         public WaiterWindow()
         {
             InitializeComponent();
-            DataContext = new OrderViewModel();
+            DataContext = new TableViewModel();
         }
 
         public BussinesLogic bl { get; set; }
@@ -41,9 +41,9 @@ namespace Wpf.Waiter
             bl.Update(ration);
         }
 
-        public void UpdateOrder(Order order)
+        public void UpdateTable(BussinnesEntity.Table table)
         {
-            bl.Update(order);
+            bl.Update(table);
         }
     }
 }

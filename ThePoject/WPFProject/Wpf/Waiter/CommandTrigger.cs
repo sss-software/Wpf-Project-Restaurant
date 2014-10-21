@@ -41,7 +41,7 @@ namespace Wpf.Waiter
 
                     if (command != null && command.CanExecute(null))
                     {
-                        command.Execute(((OrderViewModel)dc).CurrentOrder);
+                        command.Execute(((TableViewModel)dc).CurrentTable);
                     }
                 }
             }

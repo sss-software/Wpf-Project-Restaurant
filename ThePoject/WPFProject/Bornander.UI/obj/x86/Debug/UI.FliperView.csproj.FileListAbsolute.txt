@@ -1,0 +1,6 @@
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.UI\bin\Debug\Bornander.UI.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.UI\bin\Debug\Bornander.UI.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.UI\obj\x86\Debug\Bornander.UI.Properties.Resources.resources
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.UI\obj\x86\Debug\UI.FliperView.csproj.GenerateResource.Cache
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.UI\obj\x86\Debug\Bornander.UI.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Bornander.UI\obj\x86\Debug\Bornander.UI.pdb

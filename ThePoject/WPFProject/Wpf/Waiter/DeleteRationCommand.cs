@@ -9,9 +9,9 @@ namespace Wpf.Waiter
     public class DeleteRationCommand : ICommand 
     {
         private readonly Func<bool> _canExecute;
-        private readonly Action<Order, Ration> _deleted;
+        private readonly Action<Table, Ration> _deleted;
 
-        public DeleteRationCommand(Func<bool> canExecute, Action<Order, Ration> deleted)
+        public DeleteRationCommand(Func<bool> canExecute, Action<Table, Ration> deleted)
         {
             _canExecute = canExecute;
             _deleted = deleted;
@@ -28,10 +28,10 @@ namespace Wpf.Waiter
             {
                 var values = (object[])parameter;
                
-                var order = values[0] as Order;
+                var table = values[0] as Table;
                 var ration = values[1] as Ration;
 
-                if (order != null)
+                if (table != null)
                 {
                     var result = MessageBox.Show("Are you sure you wish to delete the ration?",
                                                               "Confirm Delete", MessageBoxButton.OKCancel);
@@ -40,10 +40,10 @@ namespace Wpf.Waiter
                     {
                         //BussinesLogic bl = new BussinesLogic();
                         //bl.Delete(order);
-                        order.RationList.Remove(ration);
+                        table.RationList.Remove(ration);
                         if (_deleted != null)
                         {
-                            _deleted(order,ration);
+                            _deleted(table,ration);
                         }
                     }
                 }

@@ -21,26 +21,19 @@ namespace ProjectContext
         }
         public DbSet<Person> Persons { get; set; }
         public DbSet<Ration> Rations { get; set; }
-        public DbSet<Order> Orders { get; set; }
         public DbSet<Table> Tables { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
-           
+
             modelBuilder.Entity<Table>().HasKey(t => new { t.TableId });
-            modelBuilder.Entity<Order>().HasKey(o => new { o.OrderID });
             modelBuilder.Entity<Person>().HasKey(p => new { p.PersonId });
-            modelBuilder.Entity<Ration>().HasKey(r => new { r.RationId }); 
-            modelBuilder.Entity<Order>().
-                     HasMany(o => o.RationList).
-                     WithRequired(r => r.Order).
-                     HasForeignKey(r => r.OrderId).
-                     WillCascadeOnDelete();
+            modelBuilder.Entity<Ration>().HasKey(r => new { r.RationId });
             modelBuilder.Entity<Table>().
-                    HasMany(t => t.OrderList).
-                    WithRequired(o => o.Table).
-                    HasForeignKey(o => o.TableId).
+                    HasMany(t => t.RationList).
+                    WithRequired(r => r.Table).
+                    HasForeignKey(r => r.TableId).
                     WillCascadeOnDelete();
 
         }

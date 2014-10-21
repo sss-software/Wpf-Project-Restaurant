@@ -44,7 +44,6 @@ C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\obj\Debug\DAL.dll
 C:\Users\Admin\Desktop\Git\ThePoject\WPFProject\DAL\obj\Debug\DAL.pdb
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\DAL.dll.config
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\DAL.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\DAL.pdb
@@ -65,5 +64,6 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Rest.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Rest.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\bin\Debug\Spring.Social.Core.xml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\DAL\obj\Debug\DAL.pdb

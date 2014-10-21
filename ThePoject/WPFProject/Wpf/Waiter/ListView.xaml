@@ -8,9 +8,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ListBox ItemsSource="{Binding Orders}" DisplayMemberPath="OrderID" SelectedItem="{Binding CurrentOrder,Mode=TwoWay}"/>
+        <ListBox ItemsSource="{Binding Tables}" DisplayMemberPath="TableId" SelectedItem="{Binding CurrentTable,Mode=TwoWay}"/>
         <StackPanel Grid.Row="1">
-            <Button Content="Add New" Command="{Binding Path=AddOrderCmd, Mode=OneWay}"/>
+            <Button Content="Add New" Command="{Binding Path=AddTableCmd, Mode=OneWay}"/>
             <Button  Grid.Column="1" Content=" Delete Selected " IsEnabled="{Binding CanDelete}">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Click">

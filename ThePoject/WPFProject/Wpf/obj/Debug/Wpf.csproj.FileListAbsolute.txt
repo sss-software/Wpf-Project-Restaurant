@@ -117,6 +117,7 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Login\LogInPane
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Login\SplashControl.baml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Kitchen\KitchenWindow.baml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Manager\ManagerWindow.baml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\RationDetailView.baml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Login\ErrorPanel.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Login\LogInPanel.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Login\LoginWindow.g.cs
@@ -125,6 +126,7 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Kitchen\Kitchen
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Manager\ManagerWindow.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\DetailView.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\ListView.g.cs
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\RationDetailView.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\WaiterWindow.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\App.g.cs
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -135,17 +137,14 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Wpf.exe
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Wpf.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\BL.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.dll
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.TabCarousel.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\BussinnesEntity.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.SqlServer.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Microsoft.Expression.Interactions.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\System.Windows.Interactivity.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\DAL.dll
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.Wpf.Meshes.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.dll
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\BL.pdb
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.TabCarousel.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\BussinnesEntity.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.UI.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework.xml
@@ -153,7 +152,6 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\EntityFramework
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Microsoft.Expression.Interactions.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\System.Windows.Interactivity.xml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\DAL.pdb
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Bornander.Wpf.Meshes.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\ProjectContext.pdb
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Login\LoginWindow.baml
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\DetailView.baml
@@ -164,5 +162,12 @@ Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.Properties.
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.csproj.GenerateResource.Cache
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.exe
 Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Wpf.pdb
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\RationDetailView.baml
-Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Waiter\RationDetailView.g.cs
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Kitchen\CustomiseWindow.baml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Resources\AppStyle.baml
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\Kitchen\CustomiseWindow.g.cs
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Carousel.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Expression.Samples.PathListBoxUtils.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Microsoft.Expression.Controls.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Microsoft.Expression.Drawing.dll
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\bin\Debug\Carousel.pdb
+Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\obj\Debug\App.baml

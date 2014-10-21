@@ -13,67 +13,58 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpf.Kitchen;
 using Wpf.Login;
 
 namespace Wpf
 {
+    //public enum DemoDataTemplateType { /*Robot, Person,*/ OrderLine };
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class KitchenWindow : Window
     {
         List<Ration> NotDoneRationList=null;
+
+        //public static DemoDataTemplateType CurrentDemoDataTemplateType { get; set; }
+        KitchenViewModel kvm;
         public KitchenWindow()
         {
             InitializeComponent();
-            /*DataContext = TabControl;
-
-            BussinesLogic bl = new BussinesLogic();
-            List<Ration> allNotDoneRationList = bl.GetAllRations();
-            
-            NotDoneRationList = bl.GetAllRations().Where(x => x.Done == false).ToList();
-            foreach (Ration item in NotDoneRationList)
-            {
-                TabControl.AddTab(CreateFixedSizeLabel(item.Description, new Size(320, 240)));
-                //TODO: TabControl.AddTab(new RationKitchenUserControl());
-            }
-
-            TabControl.NumberOfTabs = NotDoneRationList != null ? NotDoneRationList.Count : 0;
-
-            TabControl.AnimationDuration = 2000;
-              */
+            kvm = new KitchenViewModel();
+            DataContext = kvm;
+            //CurrentDemoDataTemplateType = DemoDataTemplateType.OrderLine;
+            //this.Loaded += new RoutedEventHandler(MainWindow_Loaded);
         }
 
-        private static FrameworkElement CreateFixedSizeLabel(string text, Size size)
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            Button label = new Button { Content = text };
-            label.FontSize = 64;
-
-            label.MinWidth = label.MaxWidth = label.Width = size.Width;
-            label.MinHeight = label.MaxHeight = label.Height = size.Height;
-
-            return label;
+            CustomiseWindow window = new CustomiseWindow();
+            window.CarouselControl = this.CarouselControl;
+            window.ShowInTaskbar = false;
+            window.Owner = this;
+            window.Left = 800;
+            window.Top = 200;
+            window.Show();
         }
 
-        private void HandlePrevious(object sender, RoutedEventArgs e)
+        private void SelectionChanged(object sender, SelectionChangedEventArgs args)
         {
-            TabControl.SpinToPrevious();
-        }
-
-        private void HandleNext(object sender, RoutedEventArgs e)
-        {
-            TabControl.SpinToNext();
-        }
-
-        private void GotoIndex(object sender, RoutedEventArgs e)
-        {
-            TabControl.SpinToIndex((int)TargetIndex.Value);
+            if (args.AddedItems.Count == 0)
+                return;
+            kvm.CurrentRation = ((OrderLineData)args.AddedItems[0]);
+            //switch (CurrentDemoDataTemplateType)
+            //{
+            //    case DemoDataTemplateType.OrderLine:
+            //        //lblSelectedItem.Content = ((OrderLineData)args.AddedItems[0]).Product;
+            //        break;
+            //}
         }
 
         private void DoneCurrent(object sender, RoutedEventArgs e)
         {
-            Ration current = NotDoneRationList.ElementAt(TabControl.GetCurrentIndex());
-            current.Done = true;
+            //Ration current = NotDoneRationList.ElementAt(TabControl.GetCurrentIndex());
+            //current.Done = true;
             
         }
     }
