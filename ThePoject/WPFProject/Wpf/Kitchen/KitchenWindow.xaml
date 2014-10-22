@@ -50,6 +50,7 @@
                
         		ItemContainerStyle="{DynamicResource RegularComboBox}"
                 ItemsSource="{Binding RationTaypes,Mode=TwoWay}" 
+                SelectedValue="{Binding OnCurentRationType,Mode=TwoWay}"
         		Background="White"
         		Style="{DynamicResource comboStyle}"
         		ToolTip="Select product from the list" HorizontalAlignment="Left" Width="150" Canvas.Left="15" Canvas.Top="149"

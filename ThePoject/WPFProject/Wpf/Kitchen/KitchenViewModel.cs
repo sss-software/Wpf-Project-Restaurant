@@ -14,17 +14,21 @@ namespace Wpf.Kitchen
     public class KitchenViewModel:BaseINPC
     {
         public BussinesLogic bl { get; set; }
-        public ObservableCollection<OrderLineData> Rations { get; set; }
+        public ObservableCollection<RationModel> Rations { get; set; }
 
         public List<Table> ActiveTables{ get; set; }
         public List<String> RationTaypes { get; set; }
 
         public ICommand DoneRationCmd { get; private set; }
 
+        //public ObservableCollection<RationModel> allRations { get; set; }
+
         public KitchenViewModel()
         {
             bl = new BussinesLogic();
-            Rations = new ObservableCollection<OrderLineData>();
+            Rations = new ObservableCollection<RationModel>();
+            //allRations = new ObservableCollection<RationModel>();
+
             ActiveTables = bl.GetAllTables();
             RationTaypes = Enum.GetNames(typeof(RationType)).ToList<String>();
 
@@ -49,16 +53,18 @@ namespace Wpf.Kitchen
             Rations.Clear();
             foreach (var ration in rations)
             {
-                Rations.Add(new OrderLineData(ration));
+                Rations.Add(new RationModel(ration));
 
             }
+
+            
 
         }
 
 
-        private OrderLineData _currentRation;
+        private RationModel _currentRation;
 
-        public OrderLineData CurrentRation
+        public RationModel CurrentRation
         {
             get { return _currentRation; }
             set
@@ -79,6 +85,12 @@ namespace Wpf.Kitchen
         {
             //int selectedTable = ((BussinnesEntity.Table)(e.AddedItems[0])).TableId;
             _PopulateRations(bl.GetAllRationsOfSpasificTable(table_id).AsQueryable());
+            //Rations = allRations.Where(x => x.TableId == table_id);
+        }
+
+        private void CmbRationType_SelectionChanged(string type)
+        {
+            _PopulateRations(bl.GetAllRations‬‎().Where(x=>x.Type.ToString().Equals(type)).AsQueryable());
         }
 
         private Table onCurentTable;
@@ -94,14 +106,19 @@ namespace Wpf.Kitchen
                 //DeleteRation.RaiseCanExecuteChanged();
             }
         }
-        
 
+        private string onCurentRationType;
 
-        private void cmbProduct_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public string OnCurentRationType
         {
-            
-            //int selectedItem = ((Ration)(e.AddedItems[0])).ProductId;
-            //carouselControl.ItemsSource = GetSpecificItemOrderLineData(selectedItem);
+            get { return onCurentRationType; }
+            set
+            {
+                onCurentRationType = value;
+                CmbRationType_SelectionChanged(OnCurentRationType);
+                RaisePropertyChanged("OnCurentRationType");
+                //DeleteRation.RaiseCanExecuteChanged();
+            }
         }
     }
 }

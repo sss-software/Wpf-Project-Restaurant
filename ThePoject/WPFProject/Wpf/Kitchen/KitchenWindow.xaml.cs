@@ -52,7 +52,7 @@ namespace Wpf
         {
             if (args.AddedItems.Count == 0)
                 return;
-            kvm.CurrentRation = ((OrderLineData)args.AddedItems[0]);
+            kvm.CurrentRation = ((RationModel)args.AddedItems[0]);
             //switch (CurrentDemoDataTemplateType)
             //{
             //    case DemoDataTemplateType.OrderLine:

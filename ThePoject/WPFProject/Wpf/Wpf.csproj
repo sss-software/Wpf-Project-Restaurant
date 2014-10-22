@@ -79,7 +79,7 @@
       <DependentUpon>CustomiseWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kitchen\KitchenViewModel.cs" />
-    <Compile Include="Kitchen\OrderLineData.cs" />
+    <Compile Include="Kitchen\RationModel.cs" />
     <Compile Include="Manager\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
@@ -225,6 +225,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Chicken.jpg" />
+    <Resource Include="Images\Fish.jpg" />
+    <Resource Include="Images\Ice Cream.jpg" />
+    <Resource Include="Images\Meat.jpg" />
+    <Resource Include="Images\Salmon.jpg" />
+    <Resource Include="Images\Schnitzel.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

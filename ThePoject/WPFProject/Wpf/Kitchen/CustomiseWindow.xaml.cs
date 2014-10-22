@@ -56,12 +56,12 @@ namespace Wpf.Kitchen
         private IEnumerable GetOrderLineData()
         {
 
-            List<OrderLineData> old = new List<OrderLineData>();
+            List<RationModel> old = new List<RationModel>();
 
             var orderLineData = bl.GetAllRations‬‎();
             foreach (Ration item in orderLineData)
             {
-                old.Add(new OrderLineData(item));
+                old.Add(new RationModel(item));
             }
             
             return old;
@@ -70,12 +70,12 @@ namespace Wpf.Kitchen
 
         private IEnumerable GetTableOrderLineData(int TableId)
         {
-            List<OrderLineData> old = new List<OrderLineData>();
+            List<RationModel> old = new List<RationModel>();
 
             var orderLineData = bl.GetAllRationsOfSpasificTable(TableId);
             foreach (Ration item in orderLineData)
             {
-                old.Add(new OrderLineData(item));
+                old.Add(new RationModel(item));
             }
 
             return old;

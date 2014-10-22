@@ -8,7 +8,7 @@ using BussinnesEntity;
 
 namespace Wpf
 {
-    public class OrderLineData : BaseINPC
+    public class RationModel : BaseINPC
     {
         public Ration the_r {get;set;}
         private int tableId;
@@ -48,7 +48,7 @@ namespace Wpf
             set { done = value; RaisePropertyChanged("Done"); }
         }
 
-        public OrderLineData(Ration r)
+        public RationModel(Ration r)
         {
             this.TableId = r.TableId;
             this.Type = r.Type;
@@ -56,7 +56,19 @@ namespace Wpf
             this.Price = r.Price;
             this.Done = r.Done;
             this.the_r = r;
+            this.rationImagePath = r.Type.ToString();
             
+        }
+
+        private string rationImagePath;
+        public string RationImagePath
+        {
+            get
+            {
+                return string.Format(@"Z:\git\Wpf-Project-Restaurant\ThePoject\WPFProject\Wpf\Images\{0}.jpg", rationImagePath);
+                                       
+            }
+            private set{}
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
